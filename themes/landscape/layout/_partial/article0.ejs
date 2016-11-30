@@ -21,11 +21,8 @@
       <% } else { %>
         <%- post.content %>
       <% } %>
-
     </div>
-
     <footer class="article-footer">
-    <%- partial('post/updated', {class_name: 'article-date', date_format: null}) %>
       <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link"><%= __('share') %></a>
       <% if (post.comments && config.disqus_shortname){ %>
         <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link"><%= __('comment') %></a>
@@ -38,30 +35,10 @@
   <% } %>
 </article>
 
-
 <% if (!index && post.comments && config.disqus_shortname){ %>
-<style>
-#load-disqus {
-  text-align: center;
-}
-#load-disqus button{
-    display: inline-block;
-    padding: 6px 15px;
-    -webkit-border-radius: 15px;
-    border-radius: 15px;
-    background: #eee;
-    color: #000;
-    text-shadow: 0 1px #fff;
-    text-decoration: none;
-    border: none;
-}
-</style>
 <section id="comments">
-  <div id="load-disqus" onclick="disqus.load();">
-      <button>点击加载评论（若无法加载，请科学上网~）</button>
-  </div>
   <div id="disqus_thread">
-
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
 </section>
 <% } %>

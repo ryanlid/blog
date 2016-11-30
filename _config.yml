@@ -3,18 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Lidong's blog
 subtitle:
 description:
-author: John Doe
-language:
+author: Lidong
+language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
-root: /
-permalink: :year/:month/:day/:title/
+url: https://lidong.me
+root: /blog/
+permalink: :title/
 permalink_defaults:
 
 # Directory
@@ -65,7 +65,22 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: landscape
 
+disqus_shortname: lidongme2
+feed:
+  type: atom
+  path: atom.xml
+  limit: 50
+  hub:
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: rsync
+  host: 106.187.52.161
+  user: dong
+  root: /home/dong/www/lidong.me/sub_dir/blog/
+  port:  # Default is 22
+  delete: true # Default is true
+  args:
+  verbose: true # Default is true
+  ignore_errors: false # Default is false

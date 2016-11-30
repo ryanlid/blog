@@ -1,15 +1,18 @@
 # Header
 menu:
-  Home: /
+  Home: https://lidong.me
+  Blog: /
   Archives: /archives
-rss: /atom.xml
+  Notes: https://lidong.me/notes/
+  OldBlog: https://blog.lidong.me
+rss: /blog/atom.xml
 
 # Content
 excerpt_link: Read More
 fancybox: true
 
 # Sidebar
-sidebar: right
+sidebar: bottom
 widgets:
 - category
 - tag
@@ -29,7 +32,7 @@ show_count: false
 
 # Miscellaneous
 google_analytics:
-favicon: /favicon.png
+favicon: /favicon.ico
 twitter:
 google_plus:
 fb_admins:

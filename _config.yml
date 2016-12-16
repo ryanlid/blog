@@ -75,7 +75,7 @@ feed:
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: rsync
+- type: rsync
   host: 106.187.52.161
   user: dong
   root: /home/dong/www/lidong.me/sub_dir/blog/
@@ -84,3 +84,7 @@ deploy:
   args:
   verbose: true # Default is true
   ignore_errors: false # Default is false
+- type: git
+  repo: git@g.lidong.me:lidongme/blog.git
+  branch: master
+  message: 

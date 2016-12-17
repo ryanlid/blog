@@ -86,5 +86,5 @@ deploy:
   ignore_errors: false # Default is false
 - type: git
   repo: git@g.lidong.me:lidongme/blog.git
-  branch: master
+  branch: public
   message: 

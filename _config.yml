@@ -77,7 +77,7 @@ feed:
 deploy:
 - type: rsync
   host: 45.32.103.122
-  user: dong
+  user: oonnnoo
   root: /var/sites/lidong/blog/
   port:  # Default is 22
   delete: true # Default is true

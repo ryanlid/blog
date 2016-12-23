@@ -3,7 +3,7 @@ title: macOS下将shadowsocks转换成http代理
 date: 2016-11-14 06:16:00
 updated: 2016-11-16 11:41:29
 tags:
-- macOS
+- macos
 - shadowsocks
 category: 
 ---

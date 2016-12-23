@@ -6,6 +6,9 @@ tags:
   - lnmp
   - centos
   - linux
+  - nginx
+  - php
+  - mysql
 ---
 
 LNMP使用了很久，也安装了好多次，每次安装还得去看别人的文档，今天来整理一份完整版文档。 虽然有网上有很好一键安装包，但自己有不是更好。 CentOS 7 Nginx 1.11.5 PHP 5.6 MySQL

@@ -6,6 +6,9 @@ tags:
 - linux
 - lnmp
 - raspberrypi
+- nginx
+- php
+- mysql
 category:
 ---
 ## 准备

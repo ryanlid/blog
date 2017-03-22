@@ -1,7 +1,7 @@
 ---
 title: 树莓派上安装 lnmp
 date: 2016-10-27 08:00:34
-updated:
+updates: 2016-10-27 08:00:34
 tags:
 - linux
 - lnmp

@@ -1,6 +1,7 @@
 ---
 title: homebrew使用
 date: 2016-10-09 08:49:00
+updated: 2016-10-09 08:49:00
 tags:
 - homebrew
 - macos

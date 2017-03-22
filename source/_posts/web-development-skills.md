@@ -1,7 +1,7 @@
 ---
 title: 前端开发者需要了解的技术
 date: 2016-10-25 06:36:26
-updated:
+updated: 2016-10-25 06:36:26
 tags:
 category:
 ---

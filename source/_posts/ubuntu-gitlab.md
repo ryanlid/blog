@@ -1,6 +1,7 @@
 ---
 title: Ubuntu 16.04 搭建 Gitlab
 date: 2016-09-11 19:11:25
+updated: 2017-03-06 20:10:00
 tags:
 - ubuntu
 - gitlab
@@ -8,6 +9,9 @@ tags:
 
 Gitlab 可以用来搭建自己的git仓库
 <!--more-->
+<div class="alert">
+目前自建 Gitlab 服务已关闭，因为使用率太低（一个人用），程序太占内存，需要单开一台VPS，不划算，选择 GitHub 会更好～
+</div>
 ## 安装Gitlab
 官方推荐配置
 
@@ -108,6 +112,7 @@ http://g.lidong.me
 
 - 2016年09月11日 首次发布
 - 2016年12月01日 添加Let's Encrypt自动更新
+- 2017年3月06日 关闭自建Gitlab服务。
 
 参考链接：
   

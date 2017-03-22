@@ -1,6 +1,7 @@
 ---
 title: 计算文件的hash值
 date: 2016-09-08 23:52:25
+updated: 2016-09-08 23:52:25
 tags:
 - hash
 - linux

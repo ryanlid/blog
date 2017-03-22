@@ -1,6 +1,7 @@
 ---
 title: 树莓派 Raspberry-Pi 系统安装及基本设置
 date: 2016-07-30 14:50:25
+updated: 2016-07-30 14:50:25
 tags:
 - raspberrypi
 ---

@@ -11,6 +11,8 @@ Chrome 正式版
 https://www.google.com/chrome/browser/
 Chrome canary测试版
 https://www.google.com/chrome/browser/canary.html
+chrome所有版本列表
+https://www.chromium.org/getting-involved/dev-channel
 
 Firefox 正式版
 https://www.mozilla.org/en-US/firefox/new/
@@ -27,6 +29,6 @@ IE
 https://msdn.microsoft.com/zh-cn/library/gg589512(v=vs.85).aspx
 
 另：
-私人珍藏网址 https://file.lidong.me/?dir=soft/browser
+私人珍藏网址 https://file.lidong.me/soft/browser/
 
 

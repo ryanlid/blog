@@ -1,7 +1,7 @@
 ---
 title: Gitlab CI 持续集成
 date: 2016-12-1 16:23:00
-updated:
+updated: 2016-12-1 16:23:00
 tags:
 - gitlab
 - gitlab-ci

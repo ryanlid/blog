@@ -1,7 +1,7 @@
 ---
 title: CentOS 上搭建 lnmp
 date: 2016-10-25 20:55:22
-updated: null
+updated: 2016-10-25 20:55:22
 tags:
   - lnmp
   - centos

@@ -1,6 +1,7 @@
 ---
 title: JavaScript基本算法
 date: 2016-10-07 20:09:01
+updated: 2016-10-07 20:09:01
 tags:
 - javascript
 ---

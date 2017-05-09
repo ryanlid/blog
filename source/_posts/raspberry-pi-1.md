@@ -80,7 +80,7 @@ Windows可以使用[Win32DiskImager](https://sourceforge.net/projects/win32diski
 
  编辑`sudo vi /etc/apt/sources.list.d/raspi.list`文件，文件中写入
     
-    deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ jessie main ui
+    deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/ jessie main ui
 ### 4.更新
 
     sudo apt-get update 
@@ -91,7 +91,12 @@ Windows可以使用[Win32DiskImager](https://sourceforge.net/projects/win32diski
 
     sudo apt-get install vim
 
-## 三、参考链接
+## 三、更新记录
+
+1. 2016-07-30 首次发布
+2. 2017-05-08 修改地址镜像地址错误
+
+## 四、参考链接
 1. [Raspberry Pi 使用科大镜像源](https://xusiwei.github.io/post/2016/raspberry-pi-use-ustc-mirror/)
 2. [科大Raspbian镜像使用帮助](https://lug.ustc.edu.cn/wiki/mirrors/help/raspbian)
 3. [官方文档](https://www.raspberrypi.org/documentation/)

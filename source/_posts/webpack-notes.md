@@ -96,8 +96,9 @@ outfile:{
 ## 插件使用 
 安装使用插件 [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin)，让js自动引入到html中
 
-
+```
 npm install html-webpack-plugin --save-dev
+```
 
 ```javascript webpack.config.js
 var htmlWebpckPlugin=require('html-webpack-plugin');

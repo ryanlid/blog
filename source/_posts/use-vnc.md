@@ -24,7 +24,19 @@ vncserver
 
 ## 安装 VNC 客户端
 
-VNC 客户端可以使用 VNC Viewer（Chrome App） 
+### MacOS 
+可以使用自带客户端（屏幕共享）
+
+```
+/System/Library/CoreServices/Applications/Screen Sharing.app
+```
+
+可以通过spotlight 或 alfred 的搜索 Screen Sharing (屏幕共享)打开，使用时，输入 `ip:port` 进行连接
+
+![MacOS屏幕共享](https://static.lidong.me/img/blog/t9IaxaqawMpf.png)
+
+### 其他平台
+可以使用 VNC Viewer（Chrome App） 
 https://chrome.google.com/webstore/detail/iabmpiboiopbgfabjmgeedhcmjenhbla
 
 在服务端启动时候，默认创建的用户为1，开放的端口为5901

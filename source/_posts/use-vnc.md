@@ -24,7 +24,7 @@ vncserver
 
 ## 安装 VNC 客户端
 
-### MacOS 
+### MacOS
 可以使用自带客户端（屏幕共享）
 
 ```
@@ -36,18 +36,18 @@ vncserver
 ![MacOS屏幕共享](https://static.lidong.me/img/blog/t9IaxaqawMpf.png)
 
 ### 其他平台
-可以使用 VNC Viewer（Chrome App） 
+可以使用 VNC Viewer（Chrome App）
 https://chrome.google.com/webstore/detail/iabmpiboiopbgfabjmgeedhcmjenhbla
-
+
 在服务端启动时候，默认创建的用户为1，开放的端口为5901
 
 客户端中，输入 `ip:1` 或 `ip:5901` 或 `ip::5901`连接 VNC，输入密码确认连接。
 
 VNC Viewer 登录页
-![VNC Viewer 截屏](https://static.lidong.me/img/blog/5WEtijRrqiUw.png)
+![VNC Viewer 截屏](https://static.lidong.me/img/blog/5WEtijRrqiUw.png)
 
-使用VNC登录 raspberry Pi
-![使用vnc登录 raspberry Pi](https://static.lidong.me/img/blog/7yO0KhNoyl6U.png)
+使用VNC登录 raspberry Pi
+![使用vnc登录 raspberry Pi](https://static.lidong.me/img/blog/7yO0KhNoyl6U.png)
 
 ## 更新记录
 

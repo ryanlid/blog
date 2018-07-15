@@ -43,14 +43,14 @@ location ^~ /.well-known/acme-challenge/ {
 # -w 指定用于验证文件保存路径，确保文件可以通过域名访问到。
 # -d 指定签发证书的域名
 sudo certbot certonly --webroot -w /var/www/challenges \
--d lidong.me -d www.lidong.me 
+-d lidong.me -d www.lidong.me
 ```
 
 ## 配置证书
 
-如果一切正常的话，获取后证书保存在到 `/etc/letsencrypt/` 中，通过 `/etc/letsencrypt/live/lidong.me/xxxx` 就可以使用刚刚获取的证书了。
+如果一切正常的话，获取后证书保存在到 `/etc/letsencrypt/` 中，通过 `/etc/letsencrypt/live/lidong.me/xxxx` 就可以使用刚刚获取的证书了。
 
-我的设置：在Nginx的`server{}`中添加下面内容，用于指定SSL证书
+我的设置：在Nginx的`server{}`中添加下面内容，用于指定SSL证书
 
 ```
 ssl_certificate      /etc/letsencrypt/live/lidong.me/fullchain.pem;

@@ -2,8 +2,8 @@
 title: 反向代理apt镜像
 date: 2017-05-08 00:22:17
 updated: 2017-06-30 01:30:00
-tags: 
-- nginx 
+tags:
+- nginx
 - 代理
 - 镜像
 category:
@@ -12,7 +12,7 @@ category:
 通过apt镜像，可以快速的安装软件包，但由于部分镜像地址直接访问有困难，所以我对这些镜像地址使用nginx搭建了一个反向代理。如需使用，请修改 `/etc/apt/sources.list.d/` 中对应文件中URL。
 
 <!-- more -->
-虽然我是为了方便在树莓派上安装而搭建反向代理，但大多数镜像地址是可以安装所有的版本的相关软件包，需要使用请自行尝试，更多信息 [👇戳这里](https://apt.proxy.oonnnoo.com/)。如有疑问可以邮件联系我  ![email](https://static.lidong.me/img/email-x28.png)
+虽然我是为了方便在树莓派上安装而搭建反向代理，但大多数镜像地址是可以安装所有的版本的相关软件包，需要使用请自行尝试，更多信息 [👇戳这里](https://apt.proxy.oonnnoo.com/)。如有疑问可以邮件联系我  ![email](https://static.lidong.me/img/email-x28.png)
 
 ## 镜像地址替换
 
@@ -41,7 +41,7 @@ category:
     ```
 
 - megasync
-    
+
     ```txt megasync.list
     deb https://apt.proxy.oonnnoo.com/mega/linux/MEGAsync/Raspbian_8.0/ ./
     #deb https://mega.nz/linux/MEGAsync/Raspbian_8.0/ ./

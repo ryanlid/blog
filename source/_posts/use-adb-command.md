@@ -89,7 +89,7 @@ adb install path_to_apk
 adb pull remote local
 ```
 
-将文件目录复制到设备
+将文件目录复制到设备
 
 ```
 adb push local remote  // 比如：adb push foo.txt /sdcard/foo.txt

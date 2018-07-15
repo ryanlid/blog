@@ -49,7 +49,7 @@ post请求
 curl -d "title=hello&&body=hello world" http://
 ```
 
-`-X` 设置请求方式
+`-X` 设置请求方式
 
 put请求
 

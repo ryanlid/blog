@@ -21,8 +21,9 @@
   },
   "scripts": {
     "dev": "hexo server",
-    "deploy": "npm run g && hexo deploy",
-    "g": "npm run clean && hexo generate",
+    "deploy": "npm run generate && hexo deploy",
+    "generate": "npm run clean && hexo generate",
+    "g":"npm run generate",
     "list": "hexo list",
     "clean": "hexo clean",
     "publish": "npm run deploy",

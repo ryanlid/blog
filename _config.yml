@@ -73,19 +73,22 @@ feed:
   limit: 50
   hub:
 
+social:
+  twitter: "@Dondongooo"
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
 - type: rsync
-  host: 45.32.103.122
-  user: oonnnoo
-  root: /var/sites/lidong/blog/
+  host: lidong.me
+  user:
+  root:
   port:  # Default is 22
   delete: true # Default is true
   args:
   verbose: true # Default is true
   ignore_errors: false # Default is false
 - type: git
-  repo: git@gitlab.com:oonnnoo/blog.git
+  repo: git@gitlab.com:ryanlid/blog.git
   branch: public
-  message: 
+  message:

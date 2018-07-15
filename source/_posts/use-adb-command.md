@@ -8,9 +8,9 @@ tags:
 category:
 ---
 
-因为前些天，手机掉地上，摔碎了屏幕，现在手机是半身不遂(下半屏触摸失效)😢
+因为前些天，手机掉地上，摔碎了屏幕，现在手机是半身不遂(下半屏触摸失效)😢
 
-搜索一下，发现可以通过android的调试工具来触发点击事件的，而且不仅仅是触发点击事件功能。
+搜索一下，发现可以通过android的调试工具来触发点击事件的，而且不仅仅是触发点击事件功能。
 
 ## 准备
 ### 下载 platform tools
@@ -29,7 +29,7 @@ https://dl.google.com/android/repository/platform-tools-latest-darwin.zip
 
 https://dl.google.com/android/repository/platform-tools-latest-linux.zip
 
-MacOS可以通过brew来安装 
+MacOS可以通过brew来安装
 
 ```
 brew cask install android-platform-tools

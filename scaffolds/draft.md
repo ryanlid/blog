@@ -13,6 +13,6 @@ description:
 
 ## 更新记录
 
-1. {{ date }} 首次发布
+1. {{ date.format('YYYY/M/D H:mm:ss') }} 首次发布
 
 ## 参考链接

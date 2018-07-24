@@ -50,5 +50,5 @@ https://file.lidong.me/soft/browser/
 
 ## 更新记录
 
-1. {{ date.format('YYYY-M-D H:mm:ss') }} 首次发布
-2. 2018/7-24 1:02:25 整理排版
+1. {{ date.format('YYYY/MM/DD H:mm:ss') }} 首次发布
+2. 2018/7/24 1:02:25 整理排版

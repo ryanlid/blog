@@ -9,6 +9,8 @@ category:
 description:
 ---
 
+[![store](https://static.lidong.me/upload/images/keqvjWA_P.png)](https://static.lidong.me/upload/images/keqvjWA_P.png)
+
 wsl开启相关内容参考 [巨硬的文档](https://docs.microsoft.com/zh-cn/windows/wsl/install-win10)
 
 这里记录一下我在 wsl 中的使用情况
@@ -17,7 +19,7 @@ wsl开启相关内容参考 [巨硬的文档](https://docs.microsoft.com/zh-cn/w
 
 ## node(nvm) 安装
 
-> 注意：安装完 nvm 需要重启终端，wsl中就直接重新进入Linux终端，才能使用 nvm 安装 Nodejs
+> 注意：安装完 nvm 需要重启终端，wsl 中就直接重新进入 Linux 终端，才能使用 nvm 安装 Nodejs
 
 ```
 # 安装 nvm

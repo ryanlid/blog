@@ -9,6 +9,8 @@ category:
 description:
 ---
 
+![docker-wordpress.png](https://static.lidong.me/upload/images/zgVFGyB2j.png)
+
 今天是元旦，首先要祝自己、祝大家元旦快乐?。
 
 好久没有写东西了，新年新开始，从今天开始写点东西吧。
@@ -21,7 +23,7 @@ description:
 
 通过docker安装，docker-compose 放在gist上，其中包含一些其他 services，请自行忽略
 
-<div class="gist-oembed" data-gist="1209a07f07b718854e5c9e7bc2589ecb.json"></div>
+<script src="https://gist.github.com/1209a07f07b718854e5c9e7bc2589ecb.js"></script>
 
 ## 遇到的问题
 

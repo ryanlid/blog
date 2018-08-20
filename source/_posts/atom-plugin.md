@@ -27,7 +27,7 @@ tags:
 [atom-material-syntax-light](https://atom.io/themes/atom-material-syntax-light)
 [file-icons](https://atom.io/packages/file-icons) Assign file extension icons and colours for improved visual grepping.
 
-### 代码美化 
+### 代码美化
 [atom-beautify](https://atom.io/packages/atom-beautify) Beautify HTML, CSS, JavaScript, PHP, Python, Ruby, Java, C, C++, C#, Objective-C, CoffeeScript, TypeScript, Coldfusion, SQL, and more in Atom.
 
 ### 小地图
@@ -58,7 +58,7 @@ tags:
 
 我的同步地址：
 
-<https://gist.github.com/OOnnnOO/f9bcf9f6a066b4bf4dc4f79f37d28c8e>
+<https://gist.github.com/f9bcf9f6a066b4bf4dc4f79f37d28c8e>
 
 ### 参考
 

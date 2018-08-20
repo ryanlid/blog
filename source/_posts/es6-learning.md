@@ -10,9 +10,12 @@ updated: 2018-06-18 20:00:27
 category:
 description:
 ---
+
 又学习了一下 JavaScript 的 ES6 的语法，记录一下～
 
 <!-- more -->
+
+[![ECMAScript 6](https://static.lidong.me/upload/images/407Uqvai1.jpg)](https://static.lidong.me/upload/images/407Uqvai1.jpg)
 
 ## 使用 `let` 声明变量
 

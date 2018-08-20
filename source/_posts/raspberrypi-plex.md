@@ -13,6 +13,8 @@ Plex是一款功能强大的流媒体播放器
 
 <!-- more -->
 
+[![bitcoin](https://static.lidong.me/upload/images/UqMscMvsN.jpg)](https://static.lidong.me/upload/images/UqMscMvsN.jpg)
+
 ## 1.添加软件源
 ```
 

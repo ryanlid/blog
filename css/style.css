@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 body {
-  color: #666;
+  color: #1a1a1a;
   font-size: 14px;
   font-family: "-apple-system", "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 'Helvetica,Arial', sans-serif;
-  background: #fff url("https://static.lidong.me/img/2017/03/roman-logov-100555.jpg") no-repeat fixed;
+  background: url("https://static.lidong.me/img/2017/03/roman-logov-100555.jpg") no-repeat center fixed;
   background-size: cover;
   max-width: 100%;
 }
@@ -21,12 +21,14 @@ pre {
   color: #ccc;
   background: #2d2d2d;
 }
-.titlewrapper {
-  width: 800px;
+.container {
+  width: 1000px;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background: #fff;
+  background: rgba(204, 204, 204, 0.8);
+}
+.titlewrapper {
   text-align: center;
   line-height: 60px;
   border-radius: 8px 8px 0 0;
@@ -40,7 +42,7 @@ pre {
   clear: both;
 }
 nav {
-  width: 800px;
+  width: 100%;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -64,18 +66,12 @@ nav li a {
   display: block;
   height: 40px;
   line-height: 40px;
-  background: #fff;
 }
 nav li a:hover {
   background: #f2f2f2;
 }
 .wrap {
-  width: 800px;
-  max-width: 100%;
   margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  background: #fff;
   padding: 20px;
   border-radius: 8px;
 }
@@ -94,7 +90,6 @@ nav li a:hover {
 .sidebar {
   margin-left: auto;
   margin-right: auto;
-  background: #fff;
 }
 .sidebar ul {
   margin: 0;
@@ -116,17 +111,17 @@ nav li a:hover {
   margin: 10px;
 }
 footer {
-  margin: 10px auto;
+  margin: 10px auto 0;
   padding: 20px 0;
   width: 800px;
   max-width: 100%;
   text-align: center;
-  background: #fff;
+  background: rgba(204, 204, 204, 0.8);
   border-radius: 8px;
 }
 .toc-container {
   float: right;
-  border: solid 1px #cccccc;
+  border: solid 1px #ffffff;
   margin-left: 10px;
 }
 .toc-container ol {
@@ -138,7 +133,7 @@ footer {
   padding: 5px 0;
 }
 article .article-content {
-  color: #444;
+  color: #333;
   font-size: 16px;
   font-family: Arial, 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', 'SimSun', '宋体', 'Helvetica,Tahoma', 'Arial sans-serif';
   -webkit-font-smoothing: antialiased;
@@ -154,7 +149,7 @@ article .article-content > pre code {
   overflow-x: auto;
 }
 article a {
-  color: #444;
+  color: #333;
   border-bottom: 2px dashed;
 }
 article a:hover {
@@ -168,9 +163,13 @@ article img {
   padding: 0;
 }
 article code {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.6);
+  border: solid 1px #ffffff;
   padding: 3px 4px;
   margin: 0 2px;
+}
+article mark {
+  padding: 4px 5px;
 }
 article .highlight {
   max-width: 100%;
@@ -221,10 +220,10 @@ article .post-info {
   background: #e6e6e6;
 }
 .page-navigator .page-number:hover {
-  background: #b3b3b3;
+  background: #ddd;
 }
 .page-navigator .page-number.current {
-  background: #868282;
+  background: #bbb;
 }
 pre .comment,
 pre .title {
@@ -283,8 +282,9 @@ pre .javascript .function {
   color: #c9c;
 }
 blockquote {
-  border-left: 3px solid rgba(0, 0, 0, 0.84);
-  background: rgba(0, 0, 0, 0.05);
+  border-left: 3px solid rgba(0, 0, 0, 0.6);
+  background: rgba(255, 255, 255, 0.4);
   padding-left: 17px;
   margin-left: 0;
+  margin-right: 0;
 }

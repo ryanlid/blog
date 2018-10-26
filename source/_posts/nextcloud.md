@@ -16,7 +16,7 @@ description:
 <!-- more -->
 
 ## 镜像选择
-![nextcloud-docker-tags.PNG](https://static.lidong.me/upload/images/SJS6BxLrQ.PNG)
+![nextcloud-docker-tags.png](https://static.lidong.me/upload/images/SJS6BxLrQ.png)
 
 [查看链接](https://hub.docker.com/_/nextcloud/)
 

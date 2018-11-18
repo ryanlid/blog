@@ -25,7 +25,7 @@ description:
 地址： [https://lidong.me/myip](https://lidong.me/myip)
 
 <div>
-<iframe src="https://lidong.me/ip" frameborder="0" style="width:100%;height:300px;"></iframe>
+<iframe src="https://lidong.me/myip" frameborder="0" style="width:100%;height:300px;"></iframe>
 <span onclick="this.parentElement.getElementsByTagName('iframe')[0].style.display='inline-block'">显示</span> <span onclick="this.parentElement.getElementsByTagName('iframe')[0].style.display='none'">折叠</span>
 </div>
 

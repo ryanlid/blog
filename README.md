@@ -14,26 +14,31 @@
 
 1. 克隆项目
 
-```shell
-git clone git@github.com:ryanlid/blog.git || git clone https://github.com/ryanlid/blog.git
-```
+    ```shell
+    git clone git@github.com:ryanlid/blog.git || git clone https://github.com/ryanlid/blog.git
+    ```
 
-2. 更新子模块，获取主题（theme）
+2. 初始化子模块，获取主题（theme）
 
-```shell
-git submodule init
-git submodule update
-```
+    ```shell
+    git submodule init
+    git submodule update
+    ```
+
+    > 获取最新主题
+    > ```shell
+    > git submodule update --remote
+    > ```
 
 3. 运行
 
-```shell
-npm install
-npm run dev
-```
+    ```shell
+    npm install
+    npm run dev
+    ```
 
 4. 新增文章
 
-```shell
-npm run hexo new hello-world
-```
+    ```shell
+    npm run hexo new hello-world
+    ```

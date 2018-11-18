@@ -22,7 +22,7 @@ description:
 
 ## 获取客户端IP、UA及其它信息
 
-地址： [https://lidong.me/ip](https://lidong.me/ip)
+地址： [https://lidong.me/myip](https://lidong.me/myip)
 
 <div>
 <iframe src="https://lidong.me/ip" frameborder="0" style="width:100%;height:300px;"></iframe>

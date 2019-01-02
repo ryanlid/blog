@@ -68,7 +68,7 @@ index_generator:
 ## Themes: https://hexo.io/themes/
 theme: simple
 
-disqus_shortname: lidongme2
+disqus_shortname: lidongme
 
 feed:
   type: atom

@@ -1,7 +1,7 @@
 ---
 title: SSH密钥对的使用
 date: 2017-02-24 23:33:40
-updated:
+updated: 2017-02-24 23:33:40
 tags:
 - ssh
 category:
@@ -61,7 +61,7 @@ ssh-add ~/.ssh/id_rsa
 
 ## 拷贝公钥到远程主机
 - 命令快捷导入方法（推荐）
-    
+
     ```
     ssh-copy-id -i ~/.ssh/id_rsa.pub user@ip
     ```

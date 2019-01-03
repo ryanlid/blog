@@ -33,7 +33,7 @@ Windows可以使用[Win32DiskImager](https://sourceforge.net/projects/win32diski
 
 然后就可以通过ssh登录到PI了（Windows系统可以使用PuTTY）
 
-初始用户名：pi 
+初始用户名：pi
 密码：raspberry
 
 ### 2.设置语言，时区
@@ -52,9 +52,9 @@ Windows可以使用[Win32DiskImager](https://sourceforge.net/projects/win32diski
 ![](https://img.lidong.me/2016/07/fT7HmTRgoS78.png)
  设置时区
 和上面差不多，就不截图了
-    
+
     sudo raspi-config
-    
+
 上下方向键移动，选5
 上下方向键移动，选I2  Change Timezome
 上下方向键移动，选择 Asia
@@ -69,23 +69,23 @@ Windows可以使用[Win32DiskImager](https://sourceforge.net/projects/win32diski
 （科大的文档没有更新，那是老版的）
 
 备份 `/etc/apt/sources.list` 和 `/etc/apt/sources.list.d/raspi.list`
-    
+
     sudo mv /etc/apt/sources.list /etc/apt/sources.list.backup
     sudo mv /etc/apt/sources.list.d/raspi.list /etc/apt/sources.list.d/raspi.list.backup
-    
-编辑`sudo vi /etc/apt/sources.list`文件，文件中写入 
+
+编辑`sudo vi /etc/apt/sources.list`文件，文件中写入
 
     deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ jessie main non-free contrib
 
 
  编辑`sudo vi /etc/apt/sources.list.d/raspi.list`文件，文件中写入
-    
+
     deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/ jessie main ui
 ### 4.更新
 
-    sudo apt-get update 
+    sudo apt-get update
     sudo apt-get upgrade
-    
+
 ### 5.安装vim编辑器
 默认的vi编辑器不是完整的，有些操作不好用，再重新安装一下vim
 

@@ -1,8 +1,8 @@
 ---
 title: Jade笔记
 date: 2017-03-07 19:03:46
-updated:
-tags: 
+updated: 2017-03-07 19:03:46
+tags:
 - notes
 - 模版
 - jade
@@ -137,7 +137,7 @@ script.
 ```
 
 输出
- 
+
 ```html
 <script>
     console.log('hello Jade!');
@@ -196,12 +196,12 @@ p(id=footer) Copyright 2017
 
 ## include
 将逻辑提取到单独的文件里的一种方式，旨在让多个文件重用它，是一种自顶向下的方法
- 
+
  ```
  // 模版名字和路径不需要加引号
  include ./includes/header
  ```
- 
+
 ## extend
 是一种自底向上的方法（和include相反），包含的文件决定它要替换主文件的哪一部分。格式为 `extend filename` 和 `block blockname`
 
@@ -247,6 +247,6 @@ npm i -g jade
 执行以下命令，将jade文件编译成html文件
 
 ```
-jade file.jade 
+jade file.jade
 ```
 

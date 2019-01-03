@@ -1,6 +1,7 @@
 ---
 title: Atom 插件
 date: 2016-10-06 14:03:01
+updated: 2016-10-06 14:03:01
 tags:
 - 编辑器
 - atom

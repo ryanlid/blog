@@ -1,7 +1,7 @@
 ---
 title: 树莓派上安装 lnmp
 date: 2016-10-27 08:00:34
-updates: 2016-10-27 08:00:34
+updated: 2016-10-27 08:00:34
 tags:
 - linux
 - lnmp
@@ -27,15 +27,15 @@ category:
     php5-common php5-cgi mysql-server php-pear php-apc curl libapr1 libtool \
     libcurl4-openssl-dev php-xml-parser php5 php5-dev php5-curl php5-fpm \
     memcached php5-memcache varnish
-    
+
     安装过程中出现下图弹窗，设置MySQL的root密码。
     ![IMG]()
-    
-    
+
+
 3.安装 Nginx
-    
+
  安装中会提示缺少一些依赖库，可以提前先安装了：
- sudo apt-get install libpcre3 libpcre3-dev 
+ sudo apt-get install libpcre3 libpcre3-dev
 
     wget -c https://nginx.org/download/nginx-1.11.5.tar.gz
     tar zxf nginx-1.11.5.tar.gz

@@ -1,5 +1,5 @@
 language: node_js
-node_js: stable
+node_js: lts/*
 
 # 只监听 source 分支的改动
 branches:

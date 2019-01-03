@@ -23,11 +23,11 @@
 <p>备份 <code>/etc/apt/sources.list</code> 和 <code>/etc/apt/sources.list.d/raspi.list</code></p>
 <pre><code>sudo mv /etc/apt/sources.list /etc/apt/sources.list.backup
 sudo mv /etc/apt/sources.list.d/raspi.list /etc/apt/sources.list.d/raspi.list.backup
-</code></pre><p>编辑<code>sudo vi /etc/apt/sources.list</code>文件，文件中写入 </p>
+</code></pre><p>编辑<code>sudo vi /etc/apt/sources.list</code>文件，文件中写入</p>
 <pre><code>deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ jessie main non-free contrib
 </code></pre><p> 编辑<code>sudo vi /etc/apt/sources.list.d/raspi.list</code>文件，文件中写入</p>
 <pre><code>deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/ jessie main ui
-</code></pre><h3 id="4-更新"><a href="#4-更新" class="headerlink" title="4.更新"></a>4.更新</h3><pre><code>sudo apt-get update 
+</code></pre><h3 id="4-更新"><a href="#4-更新" class="headerlink" title="4.更新"></a>4.更新</h3><pre><code>sudo apt-get update
 sudo apt-get upgrade
 </code></pre><h3 id="5-安装vim编辑器"><a href="#5-安装vim编辑器" class="headerlink" title="5.安装vim编辑器"></a>5.安装vim编辑器</h3><p>默认的vi编辑器不是完整的，有些操作不好用，再重新安装一下vim</p>
 <pre><code>sudo apt-get install vim

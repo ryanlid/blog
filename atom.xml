@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://lidong.me/"/>
-  <updated>2019-03-22T20:15:33.000Z</updated>
+  <updated>2019-04-10T12:05:34.000Z</updated>
   <id>https://lidong.me/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的开发环境</title>
+    <link href="https://lidong.me/my-development-environment/"/>
+    <id>https://lidong.me/my-development-environment/</id>
+    <published>2019-04-10T12:05:34.000Z</published>
+    <updated>2019-04-10T12:05:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>我的开发环境</p><a id="more"></a><h2 id="必备软件安装"><a href="#必备软件安装" class="headerlink" title="必备软件安装"></a>必备软件安装</h2><ul><li>git</li><li>sourcetree</li><li>chrome</li><li>vscode</li><li>item2</li><li>Docker</li><li>postman</li></ul><h2 id="点文件配置"><a href="#点文件配置" class="headerlink" title="点文件配置"></a>点文件配置</h2><h3 id="hosts"><a href="#hosts" class="headerlink" title="hosts"></a>hosts</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/etc/hosts</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:/⁨Windows⁩/System32⁩/drivers⁩/etc⁩/hosts</span><br></pre></td></tr></table></figure><script src="https://gist.github.com/ryanlid/5de803fea79cd6dc123a69189e8f236b.js"></script><h3 id="shell相关"><a href="#shell相关" class="headerlink" title="shell相关"></a>shell相关</h3><h4 id="bash-profile"><a href="#bash-profile" class="headerlink" title="bash_profile"></a>bash_profile</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.bash_profile</span><br></pre></td></tr></table></figure><script src="https://gist.github.com/ryanlid/f0251b3be95b7d0c51c26d13fc52986b.js"></script><h4 id="zshrc"><a href="#zshrc" class="headerlink" title="zshrc"></a>zshrc</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~/.zshrc</span><br></pre></td></tr></table></figure><h4 id="vimrc"><a href="#vimrc" class="headerlink" title="vimrc"></a>vimrc</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~/.vimrc</span><br></pre></td></tr></table></figure><script src="https://gist.github.com/ryanlid/23e332bf1a707f1987db7737f0e69d69.js"></script><h4 id="ssh-config"><a href="#ssh-config" class="headerlink" title="ssh_config"></a>ssh_config</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~/.ssh/config</span><br></pre></td></tr></table></figure><script src="https://gist.github.com/ryanlid/814de0ac719680d248c0ad37a6915c78.js"></script><h3 id="Git相关"><a href="#Git相关" class="headerlink" title="Git相关"></a>Git相关</h3><h4 id="gitconfig"><a href="#gitconfig" class="headerlink" title="gitconfig"></a>gitconfig</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~/.gitconfig</span><br></pre></td></tr></table></figure><script src="https://gist.github.com/ryanlid/ac710f222bb345649edc099a29d1a504.js"></script><h4 id="gitignore"><a href="#gitignore" class="headerlink" title="gitignore"></a>gitignore</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~/.gitignore</span><br></pre></td></tr></table></figure><script src="https://gist.github.com/ryanlid/a60e1724ab6b2eae03be8fffcd52d17b.js"></script><h3 id="Nodejs相关"><a href="#Nodejs相关" class="headerlink" title="Nodejs相关"></a>Nodejs相关</h3><h4 id="npmrc"><a href="#npmrc" class="headerlink" title="npmrc"></a>npmrc</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~/.npmrc</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~/.cnpmrc</span><br></pre></td></tr></table></figure><script src="https://gist.github.com/ryanlid/6cb14332a3759e247728b7755b5bea5d.js"></script><h3 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h3><h4 id="pip-conf"><a href="#pip-conf" class="headerlink" title="pip.conf"></a>pip.conf</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~/.pip/pip.conf</span><br></pre></td></tr></table></figure><script src="https://gist.github.com/ryanlid/8e46e2960f66a45b1e8e856f712c87f4.js"></script><h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><ol><li>2019/4/10 12:05:34 首次发布</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我的开发环境&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Webpack 使用</title>
@@ -1158,41 +1176,6 @@
       <category term="safari" scheme="https://lidong.me/tags/safari/"/>
     
       <category term="浏览器" scheme="https://lidong.me/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>树莓派上安装 lnmp</title>
-    <link href="https://lidong.me/raspberry-lnmp/"/>
-    <id>https://lidong.me/raspberry-lnmp/</id>
-    <published>2016-10-27T08:00:34.000Z</published>
-    <updated>2016-10-27T08:00:34.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><p>1.更新</p><pre><code>sudo apt-get updatesudo apt-get upgrade</code></pre><p>2.创建一个用户，用户组</p><pre><code>sudo usermod -a -G www-data www-data</code></pre><a id="more"></a><p>3.安装PHP,MySQL及一些相关软件包</p><pre><code>sudo apt-get install openssl ssl-cert php5-cli php5-mysql php5-gd \php5-common php5-cgi mysql-server php-pear php-apc curl libapr1 libtool \libcurl4-openssl-dev php-xml-parser php5 php5-dev php5-curl php5-fpm \memcached php5-memcache varnish安装过程中出现下图弹窗，设置MySQL的root密码。![IMG]()</code></pre><p>3.安装 Nginx</p><p> 安装中会提示缺少一些依赖库，可以提前先安装了：<br> sudo apt-get install libpcre3 libpcre3-dev</p><pre><code>wget -c https://nginx.org/download/nginx-1.11.5.tar.gztar zxf nginx-1.11.5.tar.gzcd nginx-1.11.5/./configure --with-http_v2_module --with-http_ssl_module --with-http_gzip_static_modulemakesudo make install</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;准备&quot;&gt;&lt;a href=&quot;#准备&quot; class=&quot;headerlink&quot; title=&quot;准备&quot;&gt;&lt;/a&gt;准备&lt;/h2&gt;&lt;p&gt;1.更新&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;sudo apt-get update
-sudo apt-get upgrade
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2.创建一个用户，用户组&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;sudo usermod -a -G www-data www-data
-&lt;/code&gt;&lt;/pre&gt;
-    
-    </summary>
-    
-    
-      <category term="lnmp" scheme="https://lidong.me/tags/lnmp/"/>
-    
-      <category term="linux" scheme="https://lidong.me/tags/linux/"/>
-    
-      <category term="nginx" scheme="https://lidong.me/tags/nginx/"/>
-    
-      <category term="php" scheme="https://lidong.me/tags/php/"/>
-    
-      <category term="mysql" scheme="https://lidong.me/tags/mysql/"/>
-    
-      <category term="raspberrypi" scheme="https://lidong.me/tags/raspberrypi/"/>
     
   </entry>
   

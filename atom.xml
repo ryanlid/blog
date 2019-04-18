@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://lidong.me/"/>
-  <updated>2019-04-10T12:05:34.000Z</updated>
+  <updated>2019-04-17T23:39:02.000Z</updated>
   <id>https://lidong.me/</id>
   
   <author>
@@ -15,6 +15,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTML5 中的文件 API</title>
+    <link href="https://lidong.me/web-file-api/"/>
+    <id>https://lidong.me/web-file-api/</id>
+    <published>2019-04-17T23:39:02.000Z</published>
+    <updated>2019-04-17T23:39:02.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="文件-API"><a href="#文件-API" class="headerlink" title="文件 API"></a>文件 API</h2><ol><li><p>代表原始二进制数据的 Blob 对象</p></li><li><p>存放原始二进制数据的缓存区的 ArrayBuffer 对象，以及可向缓存区写入或从缓存区中读出数据的 ArrayBufferView 对象与 DataView 对象。</p></li></ol><p class="codepen" data-height="400" data-theme-id="0" data-default-tab="js,result" data-user="oonnnoo" data-slug-hash="zXELNW" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="FileList"><br>  <span>See the Pen <a href="https://codepen.io/oonnnoo/pen/zXELNW/" target="_blank" rel="noopener"><br>  FileList</a> by oonnnoo (<a href="https://codepen.io/oonnnoo" target="_blank" rel="noopener">@oonnnoo</a>)<br>  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span><br></p><h2 id="ArrayBuffer-对象与-ArrayBufferView-对象与-DataView-对象"><a href="#ArrayBuffer-对象与-ArrayBufferView-对象与-DataView-对象" class="headerlink" title="ArrayBuffer 对象与 ArrayBufferView 对象与 DataView 对象"></a>ArrayBuffer 对象与 ArrayBufferView 对象与 DataView 对象</h2><p>// TODO</p><h2 id="Blob-对象"><a href="#Blob-对象" class="headerlink" title="Blob 对象"></a>Blob 对象</h2><p>创建 Blob 对象</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> blob = <span class="keyword">new</span> Blob([blobParts, type]);</span><br></pre></td></tr></table></figure><p>第一个参数值为一个数组，可以存放任意数量的以下类型的对象。</p><ul><li>Array Buffer</li><li>ArrayBufferView</li><li>Blob</li><li>String 对象</li></ul><p>第二个参数表示为数据类型</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> blob = <span class="keyword">new</span> Blob([<span class="string">"1234"</span> + <span class="string">"5678"</span>]);</span><br><span class="line"><span class="keyword">var</span> blob = <span class="keyword">new</span> Blob([<span class="string">"1234"</span> + <span class="string">"5678"</span>], &#123; <span class="attr">type</span>: <span class="string">"text/plain"</span> &#125;);</span><br><span class="line"><span class="keyword">var</span> blob = <span class="keyword">new</span> Blob([<span class="string">"1234"</span> + <span class="string">"5678"</span>], &#123; <span class="attr">type</span>: <span class="string">"text/plain;charset=UTF-8"</span> &#125;);</span><br></pre></td></tr></table></figure><p>通过 Blob 生成文件下载</p><p class="codepen" data-height="300" data-theme-id="0" data-default-tab="js,result" data-user="oonnnoo" data-slug-hash="GLOdwE" style="height: 304px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="File-Blob-download"><br>  <span>See the Pen <a href="https://codepen.io/oonnnoo/pen/GLOdwE/" target="_blank" rel="noopener"><br>  File-Blob-download</a> by oonnnoo (<a href="https://codepen.io/oonnnoo" target="_blank" rel="noopener">@oonnnoo</a>)<br>  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span><br></p><p>Blob 对象的 slice 方法</p><p>用于从 Blob 对象所代表的原始二进制数据中抽离一部分数据。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> newBlob = blob.slice(start, end, contentType);</span><br></pre></td></tr></table></figure><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> file = <span class="built_in">document</span>.getElementById(<span class="string">"file"</span>).files[<span class="number">0</span>];</span><br><span class="line"><span class="keyword">if</span> (file) &#123;</span><br><span class="line">  <span class="comment">// 复制file对象</span></span><br><span class="line">  <span class="keyword">var</span> fileClone = file.slice();</span><br><span class="line">  <span class="comment">// 复制file对象</span></span><br><span class="line">  <span class="keyword">var</span> fileClone2 = file.slice(<span class="number">0</span>, file.size);</span><br><span class="line">  <span class="comment">// 复制file对象的后半部分</span></span><br><span class="line">  <span class="keyword">var</span> fileChunkFromEnd = file.slice(-<span class="built_in">Math</span>.round(file.size / <span class="number">2</span>));</span><br><span class="line">  <span class="comment">// 复制file对象的前半部分</span></span><br><span class="line">  <span class="keyword">var</span> fileChunkFromStart = file.slice(<span class="number">0</span>, <span class="built_in">Math</span>.round(file.size / <span class="number">2</span>));</span><br><span class="line">  <span class="keyword">var</span> fileNoMetadata = file.slice(<span class="number">0</span>, <span class="number">-150</span>, <span class="string">"application/experimental"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="FileReader-对象"><a href="#FileReader-对象" class="headerlink" title="FileReader 对象"></a>FileReader 对象</h2><h3 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h3><ul><li>onabort 中止</li><li>onerror</li><li>onloadstart</li><li>onprogress</li><li>onload</li><li>onloadend</li></ul><p>// 触发顺序 loadstart progress load loadend</p><h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><table><thead><tr><th>方法</th><th>描述</th></tr></thead><tbody><tr><td>readAsText</td><td>以文本的形式读取 Blob 对象（第二个参数可以设置文本的编码方式，默认 UTF-8）</td></tr><tr><td>readAsBinaryString</td><td>以二进制字符串读取 Blob 对象</td></tr><tr><td>readAsDataURL</td><td>以 Data URL 字符串 读取 Blob 对象</td></tr><tr><td>readAsArrayBuffer</td><td>以 ArrayBuffer 读取 Blob 对象</td></tr></tbody></table><p class="codepen" data-height="850" data-theme-id="0" data-default-tab="js,result" data-user="oonnnoo" data-slug-hash="yrKagM" style="height: 370px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="FileReader"><br>  <span>See the Pen <a href="https://codepen.io/oonnnoo/pen/yrKagM/" target="_blank" rel="noopener"><br>  FileReader</a> by oonnnoo (<a href="https://codepen.io/oonnnoo" target="_blank" rel="noopener">@oonnnoo</a>)<br>  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span><br></p><h4 id="FileReader-readAsArrayBuffer-示例"><a href="#FileReader-readAsArrayBuffer-示例" class="headerlink" title="FileReader readAsArrayBuffer 示例"></a>FileReader readAsArrayBuffer 示例</h4><p class="codepen" data-height="750" data-theme-id="0" data-default-tab="js,result" data-user="oonnnoo" data-slug-hash="jRzMRL" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="FileReader-readAsArrayBuffer"><br>  <span>See the Pen <a href="https://codepen.io/oonnnoo/pen/jRzMRL/" target="_blank" rel="noopener"><br>  FileReader-readAsArrayBuffer</a> by oonnnoo (<a href="https://codepen.io/oonnnoo" target="_blank" rel="noopener">@oonnnoo</a>)<br>  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span><br></p><script async src="https://static.codepen.io/assets/embed/ei.js"></script><h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><ol><li>2019/4/17 23:39:02 首次发布</li></ol><h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;文件-API&quot;&gt;&lt;a href=&quot;#文件-API&quot; class=&quot;headerlink&quot; title=&quot;文件 API&quot;&gt;&lt;/a&gt;文件 API&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;代表原始二进制数据的 Blob 对象&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;存放原始二进制数据
+      
+    
+    </summary>
+    
+    
+      <category term="html5" scheme="https://lidong.me/tags/html5/"/>
+    
+      <category term="web" scheme="https://lidong.me/tags/web/"/>
+    
+      <category term="javascript" scheme="https://lidong.me/tags/javascript/"/>
+    
+      <category term="html" scheme="https://lidong.me/tags/html/"/>
+    
+      <category term="file" scheme="https://lidong.me/tags/file/"/>
+    
+      <category term="api" scheme="https://lidong.me/tags/api/"/>
+    
+  </entry>
   
   <entry>
     <title>我的开发环境</title>
@@ -479,9 +515,9 @@
     </summary>
     
     
-      <category term="nodejs" scheme="https://lidong.me/tags/nodejs/"/>
-    
       <category term="项目" scheme="https://lidong.me/tags/%E9%A1%B9%E7%9B%AE/"/>
+    
+      <category term="nodejs" scheme="https://lidong.me/tags/nodejs/"/>
     
       <category term="qrcode" scheme="https://lidong.me/tags/qrcode/"/>
     
@@ -1156,32 +1192,6 @@
       <category term="macos" scheme="https://lidong.me/tags/macos/"/>
     
       <category term="shadowsocks" scheme="https://lidong.me/tags/shadowsocks/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>各大浏览器下载地址</title>
-    <link href="https://lidong.me/browser/"/>
-    <id>https://lidong.me/browser/</id>
-    <published>2016-11-07T07:22:29.000Z</published>
-    <updated>2018-07-24T01:02:25.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>整理一下各大浏览器下载地址，需要的时候可以直接下载</p><a id="more"></a><h2 id="Chrome"><a href="#Chrome" class="headerlink" title="Chrome"></a>Chrome</h2><p>Chrome 正式版<br><a href="https://www.google.com/chrome/browser/" target="_blank" rel="noopener">https://www.google.com/chrome/browser/</a></p><p>Chrome canary测试版<br><a href="https://www.google.com/chrome/browser/canary.html" target="_blank" rel="noopener">https://www.google.com/chrome/browser/canary.html</a></p><p>chrome 各种版本<br><a href="https://www.chromium.org/getting-involved/dev-channel" target="_blank" rel="noopener">https://www.chromium.org/getting-involved/dev-channel</a></p><h2 id="Firefox"><a href="#Firefox" class="headerlink" title="Firefox"></a>Firefox</h2><p>Firefox 正式版<br><a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank" rel="noopener">https://www.mozilla.org/en-US/firefox/new/</a></p><p>Firefox 各种版本（包括Beta版，Developer Edition，Night版）<br><a href="https://www.mozilla.org/en-US/firefox/channel/desktop/" target="_blank" rel="noopener">https://www.mozilla.org/en-US/firefox/channel/desktop/</a></p><h2 id="Safari"><a href="#Safari" class="headerlink" title="Safari"></a>Safari</h2><p>Safari 正式版<br><a href="https://developer.apple.com/safari/" target="_blank" rel="noopener">https://developer.apple.com/safari/</a></p><p>Safari 开发者版<br><a href="https://developer.apple.com/safari/technology-preview/" target="_blank" rel="noopener">https://developer.apple.com/safari/technology-preview/</a></p><h2 id="Internet-Explorer"><a href="#Internet-Explorer" class="headerlink" title="Internet Explorer"></a>Internet Explorer</h2><p>F12 开发人员工具简介<br><a href="https://msdn.microsoft.com/zh-cn/library/gg589512(v=vs.85).aspx" target="_blank" rel="noopener">https://msdn.microsoft.com/zh-cn/library/gg589512(v=vs.85).aspx</a></p><h2 id="私藏下载地址"><a href="#私藏下载地址" class="headerlink" title="私藏下载地址"></a>私藏下载地址</h2><p><a href="https://file.lidong.me/soft/browser/" target="_blank" rel="noopener">https://file.lidong.me/soft/browser/</a></p><h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><ol><li>2016/11/07 7:22:29 首次发布</li><li>2018/7/24 1:02:25 整理排版</li></ol>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;整理一下各大浏览器下载地址，需要的时候可以直接下载&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="chrome" scheme="https://lidong.me/tags/chrome/"/>
-    
-      <category term="firefox" scheme="https://lidong.me/tags/firefox/"/>
-    
-      <category term="safari" scheme="https://lidong.me/tags/safari/"/>
-    
-      <category term="浏览器" scheme="https://lidong.me/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
     
   </entry>
   

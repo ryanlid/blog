@@ -4,15 +4,33 @@
   box-sizing: border-box;
 }
 body {
-  color: #1a1a1a;
+  color: #eee;
   font-size: 14px;
-  font-family: "-apple-system", "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 'Helvetica,Arial', sans-serif;
-  background: url("https://static.lidong.me/upload/images/QOfn0eAFx.jpg") no-repeat center fixed;
+  font-family: "-apple-system", "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica,Arial", sans-serif;
+  background: #999999 no-repeat fixed center;
   background-size: cover;
   max-width: 100%;
 }
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+  body {
+    background-image: url("https://static.lidong.me/upload/images/QOfn0eAFx-768x432.jpg");
+  }
+}
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+  body {
+    background-image: url("https://static.lidong.me/upload/images/QOfn0eAFx-1024x576.jpg");
+  }
+}
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+  body {
+    background-image: url("https://static.lidong.me/upload/images/QOfn0eAFx-1920x1080.jpg");
+  }
+}
 a {
-  color: #0000ee;
+  color: #fff;
   text-decoration: none;
 }
 pre {
@@ -26,7 +44,7 @@ pre {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background: rgba(204, 204, 204, 0.9);
+  background: rgba(130, 130, 130, 0.8);
 }
 .titlewrapper {
   text-align: center;
@@ -68,7 +86,7 @@ nav li a {
   line-height: 40px;
 }
 nav li a:hover {
-  background: #f2f2f2;
+  background: #acacac;
 }
 .wrap {
   margin-top: 10px;
@@ -116,14 +134,14 @@ footer {
   width: 800px;
   max-width: 100%;
   text-align: center;
-  background: rgba(204, 204, 204, 0.9);
+  background: rgba(130, 130, 130, 0.8);
   border-radius: 8px;
 }
 .toc-container {
   float: right;
   border: solid 1px #ffffff;
   margin-left: 10px;
-  background: rgba(204, 204, 204, 0.9);
+  background: rgba(130, 130, 130, 0.8);
 }
 .toc-container ol {
   padding-left: 10px;
@@ -134,9 +152,7 @@ footer {
   padding: 5px 0;
 }
 article .article-content {
-  color: #333;
   font-size: 16px;
-  font-family: Arial, 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', 'SimSun', '宋体', 'Helvetica,Tahoma', 'Arial sans-serif';
   -webkit-font-smoothing: antialiased;
   line-height: 1.8;
   word-wrap: break-word;
@@ -150,7 +166,7 @@ article .article-content > pre code {
   overflow-x: auto;
 }
 article a {
-  color: #333;
+  color: #ccc;
   border-bottom: 2px dashed;
 }
 article a:hover {
@@ -164,8 +180,8 @@ article img {
   padding: 0;
 }
 article code {
-  background: rgba(255, 255, 255, 0.6);
-  border: solid 1px #ffffff;
+  background: rgba(204, 204, 204, 0.6);
+  border: solid 1px #ccc;
   padding: 3px 4px;
   margin: 0 2px;
 }
@@ -216,7 +232,7 @@ article .post-info {
   border: 1px solid #999;
   padding: 10px;
   margin: 4px;
-  color: #0000ee;
+  color: #ccc;
   background: #e6e6e6;
 }
 .page-navigator .page-number:hover {
@@ -297,7 +313,7 @@ blockquote {
   display: inline-block;
   text-align: center;
   border: none;
-  content: '🔗';
+  content: "🔗";
 }
 .gist .gist-data {
   max-height: 200px;

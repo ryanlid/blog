@@ -52,6 +52,7 @@ pre {
   border-radius: 8px 8px 0 0;
 }
 .titlewrapper h1 {
+  margin-top: 0;
   margin-bottom: 0;
 }
 .clearfix::after {
@@ -233,13 +234,13 @@ article .post-info {
   padding: 10px;
   margin: 4px;
   color: #ccc;
-  background: #e6e6e6;
+  background: #000000;
 }
 .page-navigator .page-number:hover {
-  background: #ddd;
+  background: #333;
 }
 .page-navigator .page-number.current {
-  background: #bbb;
+  background: #666;
 }
 pre .comment,
 pre .title {

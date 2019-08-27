@@ -3,6 +3,7 @@ const dynamicCache = "site-dynamic";
 const assets = [
   "/blog/",
   "/blog/index.html",
+  "/blog/fallback.html",
   "/blog/manifest.json",
   "/blog/css/style.css"
 ];
@@ -50,7 +51,7 @@ self.addEventListener("fetch", evt => {
       })
       .catch(() => {
         if (evt.request.url.indexOf(".html") > -1) {
-          caches.match("/fallback.html");
+          caches.match("/blog/fallback.html");
         }
       })
   );

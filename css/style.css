@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  color: #eee;
+  color: #cdcdcd;
   font-size: 14px;
   font-family: "-apple-system", "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica,Arial", sans-serif;
   background: #999999 no-repeat fixed center;
@@ -44,7 +44,7 @@ pre {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background: rgba(130, 130, 130, 0.8);
+  background: rgba(0, 0, 0, 0.9);
 }
 .titlewrapper {
   text-align: center;
@@ -134,14 +134,14 @@ footer {
   width: 800px;
   max-width: 100%;
   text-align: center;
-  background: rgba(130, 130, 130, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   border-radius: 8px;
 }
 .toc-container {
   float: right;
   border: solid 1px #ffffff;
   margin-left: 10px;
-  background: rgba(130, 130, 130, 0.8);
+  background: rgba(0, 0, 0, 0.9);
 }
 .toc-container ol {
   padding-left: 10px;

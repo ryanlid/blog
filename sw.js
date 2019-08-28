@@ -50,7 +50,10 @@ self.addEventListener("fetch", evt => {
         );
       })
       .catch(() => {
-        if (evt.request.url.indexOf(".html") > -1) {
+        if (
+          evt.request.url.indexOf(".html") > -1 ||
+          evt.request.url.endsWith("/")
+        ) {
           return caches.match("/blog/fallback.html");
         }
       })

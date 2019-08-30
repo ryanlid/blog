@@ -3,6 +3,7 @@ title: 安装 dropbox 同步备份主机数据
 tags:
   - dropbox
   - 备份
+  - linux
 date: 2018-01-22 02:45:39
 updated: 2018-01-22 02:45:39
 category:

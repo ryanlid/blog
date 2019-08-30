@@ -2,7 +2,10 @@
 title: 初始服务器设置
 date: 2017-06-20 00:15:00
 updated: 2017-06-20 00:15:00
-tags: linux
+tags:
+- linux
+- centos
+- ubuntu
 category:
 ---
 

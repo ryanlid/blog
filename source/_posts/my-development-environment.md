@@ -6,6 +6,13 @@ tags:
 - 环境
 - git
 - docker
+- bash
+- zsh
+- vim
+- hosts
+- ssh
+- nodejs
+- python
 category:
 description:
 ---

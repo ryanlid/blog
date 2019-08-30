@@ -1,9 +1,9 @@
 ---
 title: 二维码生成服务
 tags:
-  - 项目
   - nodejs
   - qrcode
+  - 小作品
 date: 2018-03-22 21:50:23
 updated: 2018-03-22 21:50:23
 category:

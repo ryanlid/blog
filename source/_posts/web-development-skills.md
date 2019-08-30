@@ -3,6 +3,7 @@ title: 前端开发者需要了解的技术
 date: 2016-10-25 06:36:26
 updated: 2016-10-25 06:36:26
 tags:
+- 前端
 category:
 ---
 
@@ -61,7 +62,7 @@ category:
     - Go / GoLang
     - Rust
     - Java
-    - C#  
+    - C#
 - 数据
     - 高速缓存？(Caching)
         - [Nginx](http://localhost:4000/blog/tags/nginx/) (Server)

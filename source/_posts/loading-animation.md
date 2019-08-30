@@ -6,6 +6,7 @@ tags:
 - html
 - css
 - css3
+- loading
 - codepen
 ---
 

@@ -5,6 +5,7 @@ updated: 2017-01-14 00:48:49
 tags:
 - 深网
 - tor
+- 读书笔记
 category:
 - 读书笔记
 ---
@@ -30,7 +31,7 @@ Tor网络是暗网的一种，所有暗网的集合才是组成深网的一部�
 - Tor 浏览器
 [https://www.torproject.org/download/download.html.en]()
 
-- hidden wiki 
+- hidden wiki
 Tor中维基、网址大全
 [http://kpvz7ki2v5agwt35.onion]() 这个是书中介绍的，刚刚去喵了一眼，提供一个新的URL2017
 [http://zqktlwi4fecvo6ri.onion]() 2017新URL
@@ -39,7 +40,7 @@ Tor中维基、网址大全
 可以用来对文件加密和验证文件是否被篡改。
 查看维基百科：[链接](https://zh.wikipedia.org/wiki/%E8%89%AF%E5%A5%BD%E9%9A%B1%E7%A7%81%E5%AF%86%E7%A2%BC%E6%B3%95)
 
-- Tails系统 
+- Tails系统
 嗯，据说是斯诺登也在使用的安全操作系统。
 链接 https://tails.boum.org/
 
@@ -48,7 +49,7 @@ Tor中维基、网址大全
 > p49
 > 虽然黑客总是闷闷不乐，无知很容易惹恼他们，但他们总是乐于提供帮助——当一件事你自己搞了很久或者干脆对这件事就不太灵通，但你有极大的兴趣时
 
---- 
+---
 > p51
 > Tor网络反映了数据保护者和安全局之间的斗争，一方面，匿名性可用于掩饰犯罪行为，另一方面，保持匿名也是基本的公民权利。是罪犯、自由捍卫者、间谍和正派者的停留地。
 

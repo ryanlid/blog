@@ -4,6 +4,7 @@ date: 2017-08-06 00:14:19
 updated: 2017-08-06 00:14:19
 tags:
 - vnc
+- linux
 - raspberrypi
 category:
 ---

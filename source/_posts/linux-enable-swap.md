@@ -4,6 +4,7 @@ date: 2016-09-11 08:23:25
 updated: 2016-09-11 08:23:25
 tags:
 - linux
+- swap
 ---
 
 1. 检查分区情况
@@ -24,7 +25,7 @@ tags:
         swapon /swapfile
 
         swapon: /swapfile: insecure permissions 0644, 0600 suggested.
-    
+
         chmod 0600 /swapfile
 
 5. 想在引导时候自动启用，编辑文件 `/etc/fstab`
@@ -33,7 +34,7 @@ tags:
 在文件末位添加
 
         /swapfile swap swap defaults 0 0
-        
+
 6. 验证：系统下次引导时，它就会启用新建的交换文件，再查看SWAP分区大小发现增加了2G。
 
     ![](https://img.lidong.me/2016/09/Uv4CHbdAfCoY.png)

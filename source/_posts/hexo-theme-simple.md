@@ -3,6 +3,8 @@ title: simple-theme 制作简单的hexo主题
 date: 2017-03-12 22:13:13
 updated: 2017-03-12 22:13:13
 tags:
+- hexo
+- 主题
 category:
 ---
 

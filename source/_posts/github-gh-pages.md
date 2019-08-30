@@ -3,6 +3,8 @@ title: 创建只有gh-pages分支github仓库
 date: 2017-03-19 14:47:59
 updated: 2017-03-19 14:47:59
 tags:
+- git
+- github
 category:
 ---
 有时项目只需要使用gh-pages分支，并不要master分支

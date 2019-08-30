@@ -4,7 +4,7 @@ tags:
   - 前端
   - ecmascript 6
   - es6
-  - Javascript
+  - javascript
 date: 2018-06-18 20:00:27
 updated: 2018-06-18 20:00:27
 category:

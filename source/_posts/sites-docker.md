@@ -4,6 +4,7 @@ date: 2017-01-18 12:09:40
 updated: 2017-01-18 12:09:40
 tags:
 - docker
+- docker-compose
 category:
 ---
 
@@ -17,7 +18,7 @@ category:
 ## 部署结构
 目前裸域名的内容有三部分：首页及其目录下的少量页面，Blog，Wiki
 
-所以部署的情况： 
+所以部署的情况：
 
 1. 使用一个Nginx container作为入口
 2. 首页和blog均为静态文件，将目录映射到nginx容器中，直接访问。

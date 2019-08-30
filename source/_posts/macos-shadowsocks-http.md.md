@@ -5,7 +5,9 @@ updated: 2016-11-16 11:41:29
 tags:
 - macos
 - shadowsocks
-category: 
+- http
+- vpn
+category:
 ---
 
 ### 安装privoxy
@@ -35,7 +37,7 @@ category:
 看到如下进程
 
     xxx             57930   0.0  0.0  2461168   1496   ??  S    11:19上午   0:00.02 /usr/local/Cellar/privoxy/3.0.26/sbin/privoxy --no-daemon /usr/local/etc/privoxy/config
-    
+
 证明已经启动
 2.
 
@@ -43,7 +45,7 @@ category:
 看到这个
 
     tcp4       0      0  *.8118                 *.*                    LISTEN
-    
+
 证明已经监听。
 
 ## 使用

@@ -4,6 +4,7 @@ date: 2017-03-18 01:39:34
 updated: 2017-03-18 01:39:34
 tags:
 - nginx
+- linux
 category:
 ---
 ## 依赖安装
@@ -35,7 +36,7 @@ unzip master.zip
 
 ## 安装nginx
 ### 下载nginx
- 
+
  ```
  wget -c http://nginx.org/download/nginx-1.11.10.tar.gz
  ```

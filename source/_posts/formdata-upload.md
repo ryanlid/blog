@@ -3,6 +3,7 @@ title: 通过 formdata 上传文件
 tags:
   - codepen
   - web
+  - formdata
 date: 2018-01-28 00:00:18
 updated: 2018-01-28 00:00:18
 category:

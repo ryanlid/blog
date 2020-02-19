@@ -1,7 +1,7 @@
 ---
 title: 初始服务器设置
 date: 2017-06-20 00:15:00
-updated: 2017-06-20 00:15:00
+updated: 2020-02-19 19:45:00
 tags:
 - linux
 - centos
@@ -11,20 +11,20 @@ category:
 
 ## 添加用户
 
-> 请将下面提到dong替换成你自己的用户名
+> 请将下面提到 ryan 替换成你自己的用户名
 
 ```shell
 # 添加用户
-adduser dong
+adduser ryan
 # 设置密码
-passwd dong
+passwd ryan
 ```
 > 添加用户还有另一种方法
 >
 > 在centos7系统中会创建用户的home目录，但在ubuntu17.10系统不会创建用户的home目录(其他版本请自测)
 
 ```
-useradd dong
+useradd ryan
 ```
 
 ## 添加 `sudo` 用户权限
@@ -32,8 +32,8 @@ useradd dong
 > 强烈建议不要使用修改`/etc/sudoers`的方法，一旦修改出错，后果很严重
 
 ```
-usermod -aG sudo dong (ubuntu)
-usermod -aG wheel dong (centos)
+usermod -aG sudo ryan (ubuntu)
+usermod -aG wheel ryan (centos)
 ```
 
 >参考链接：
@@ -77,16 +77,16 @@ sudo systemctl reload sshd
 ### 方法一：禁止个别用户登录
 
 ```bash
-禁止个别用户登录。比如禁止dong用户登录。
-passwd -l dong
+# 禁止个别用户登录。比如禁止ryan用户登录。
+passwd -l ryan
 ```
 
 ```bash
-# 锁定dong用户，这样该用户就不能登录了。
-passwd -u dong
+# 锁定ryan用户，这样该用户就不能登录了。
+passwd -u ryan
 ```
 
-对锁定的用户dong进行解锁，用户可登录了。
+对锁定的用户ryan进行解锁，用户可登录了。
 
 ### 方法二：禁止部分用户登录
 
@@ -108,16 +108,16 @@ vi /etc/passwd
 > uucp:x:10:14:uucp:/var/spool/uucp:/sbin/nologin
 > operator:x:11:0:operator:/root:/sbin/nologin
 > games:x:12:100:games:/usr/games:/sbin/nologin
-> dong:x:500:500::/home/dong:/bin/bash
+> ryan:x:500:500::/home/ryan:/bin/bash
 
 将
 
-> `dong:x:500:500::/home/dong:/bin/bash`
+> `ryan:x:500:500::/home/ryan:/bin/bash`
 
 更改为：
 
 ```
-dong:x:500:500::/home/dong:/sbin/nologin
+ryan:x:500:500::/home/ryan:/sbin/nologin
 ```
 该用户就无法登录了。
 
@@ -130,7 +130,18 @@ touch /etc/nologin
 ```
 除root以外的用户不能登录了。
 
+### 接下来可能要做事情
+
+1. [挂载NFS文件系统](https://help.aliyun.com/document_detail/90529.html)
+2. [安装 docker](https://lidong.me/blog/docker-ce-install/)
+3. [安装 docker-compose](https://lidong.me/blog/docker-compose/)
+4. [Circleci SSH 服务端设置](https://lidong.me/blog/circleci-ssh-setup/)
+5. [SSL 证书配置](https://lidong.me/blog/letsencrypt-dns-api/)
+
 ## 更新记录
 
-1. {{ date.format('YYYY/MM/DD H:mm:ss') }}
+1. {{ date.format('YYYY/MM/DD HH:mm:ss') }}
 2. 2019/01/03 20:43:11 添加禁止用户登录的方法
+3. {{updated.format('YYYY/MM/DD HH:mm:ss')}}
+  - 修改用户名
+  - 添加“接下来”链接指引

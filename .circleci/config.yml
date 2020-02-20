@@ -43,7 +43,7 @@ jobs:
             pwd
             ls
             if [ ${CIRCLE_BRANCH} = "master" ];then
-                rsync -az -v --delete -e ssh /home/circleci/project/public/* $SSH_USER@$SSH_HOST:/srv/chat/
+                rsync -az -v --delete -e ssh /home/circleci/project/public/* $SSH_USER@$SSH_HOST:$SSH_PATH
             else
                 echo "Not master branch"
             fi

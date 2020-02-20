@@ -7,8 +7,7 @@ jobs:
   build:
     filters:
       branches:
-        only:
-          - master
+        only: master
     docker:
       - image: circleci/node:lts
     working_directory: ~/project

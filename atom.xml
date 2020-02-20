@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://lidong.me/"/>
-  <updated>2020-02-17T10:41:00.000Z</updated>
+  <updated>2020-02-20T22:47:53.000Z</updated>
   <id>https://lidong.me/</id>
   
   <author>
@@ -15,6 +15,67 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>通过 DNS Api 签发 Let&#39;s Encrypt 证书</title>
+    <link href="https://lidong.me/letsencrypt-dns-api/"/>
+    <id>https://lidong.me/letsencrypt-dns-api/</id>
+    <published>2020-02-20T22:47:53.000Z</published>
+    <updated>2020-02-20T22:47:53.000Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a><p>我域名的DNS托管在 Cloudflare，所以这里只记录 Cloudflare DNS 的操作。</p><h2 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h2><p>需要<a href="https://lidong.me/blog/docker-ce-install/">安装 docker</a></p><h2 id="获取CloudFlare-API"><a href="#获取CloudFlare-API" class="headerlink" title="获取CloudFlare API"></a>获取CloudFlare API</h2><p>需要获取 Global API Key</p><p>填入 <code>/root/.secrets/cerbot/cloudflare.ini</code> 格式为：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dns_cloudflare_email = example@example.com</span><br><span class="line">dns_cloudflare_api_key = 12345678901234567</span><br></pre></td></tr></table></figure><blockquote><p>设置文件权限，可以避免获取证书时出现相关警告</p><p><code>sudo chmod 0400 /root/.secrets/cerbot/cloudflare.ini</code></p></blockquote><h2 id="获取证书"><a href="#获取证书" class="headerlink" title="获取证书"></a>获取证书</h2><p>使用 certbot 提供了 Cloudflare 镜像，拉去运行就可以了</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">sudo docker run -it --rm --name certbot \</span><br><span class="line">            -v <span class="string">"/etc/letsencrypt:/etc/letsencrypt"</span> \</span><br><span class="line">            -v <span class="string">"/var/lib/letsencrypt:/var/lib/letsencrypt"</span> \</span><br><span class="line">            -v <span class="string">"/root/.secrets/cerbot/cloudflare.ini:/root/.secrets/cerbot/cloudflare.ini"</span> \</span><br><span class="line">            certbot/dns-cloudflare certonly --expand --dns-cloudflare \</span><br><span class="line">            --dns-cloudflare-credentials /root/.secrets/cerbot/cloudflare.ini \</span><br><span class="line">            --dns-cloudflare-propagation-seconds 60 \</span><br><span class="line">            -d lidong.me \</span><br><span class="line">            -d *.lidong.me \</span><br><span class="line">            -d funs.app \</span><br><span class="line">            -d *.funs.app \</span><br><span class="line">            -d oonnnoo.com \</span><br><span class="line">            -d *.oonnnoo.com \</span><br><span class="line">            -d *.rorg.oonnnoo.com \</span><br><span class="line">            -d *.rcom.oonnnoo.com \</span><br><span class="line">            -d *.rnet.oonnnoo.com</span><br></pre></td></tr></table></figure><p>其他常用的DNS服务商，也有相关镜像，在这里：<a href="https://hub.docker.com/u/certbot" target="_blank" rel="noopener">https://hub.docker.com/u/certbot</a></p><h2 id="相关内容"><a href="#相关内容" class="headerlink" title="相关内容"></a>相关内容</h2><ol><li><a href="https://lidong.me/blog/certbot-letsencrypt/">使用 Certbot工具，签发 Let’s Encrypt 证书</a></li><li><a href="https://github.com/ryanlid/sites/blob/master/cert/README.md" target="_blank" rel="noopener">https://github.com/ryanlid/sites/blob/master/cert/README.md</a></li></ol><h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><ol><li>2020/2/20 22:47:53 首次发布</li></ol><h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;我域名的DNS托管在 Cloudflare，所以这里只记录 Cloudflare DNS 的操作。&lt;/p&gt;
+&lt;h2 id=&quot;前提&quot;&gt;&lt;a href=&quot;#前提&quot; class=&quot;headerlink&quot; title=&quot;前提&quot;&gt;&lt;/a&gt;前提&lt;/h
+      
+    
+    </summary>
+    
+    
+      <category term="https" scheme="https://lidong.me/tags/https/"/>
+    
+      <category term="letsencrypt" scheme="https://lidong.me/tags/letsencrypt/"/>
+    
+      <category term="docker" scheme="https://lidong.me/tags/docker/"/>
+    
+      <category term="api" scheme="https://lidong.me/tags/api/"/>
+    
+      <category term="dns-api" scheme="https://lidong.me/tags/dns-api/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Circleci SSH 服务端设置</title>
+    <link href="https://lidong.me/circleci-ssh-setup/"/>
+    <id>https://lidong.me/circleci-ssh-setup/</id>
+    <published>2020-02-19T18:31:51.000Z</published>
+    <updated>2020-02-19T18:31:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a><h2 id="添加-circleci-用户"><a href="#添加-circleci-用户" class="headerlink" title="添加 circleci 用户"></a>添加 circleci 用户</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 添加用户</span></span><br><span class="line">useradd circleci</span><br></pre></td></tr></table></figure><h2 id="导入密钥"><a href="#导入密钥" class="headerlink" title="导入密钥"></a>导入密钥</h2><p>创建 authorized_keys，并设置权限</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /home/circleci/.ssh/</span><br><span class="line">touch /home/circleci/.ssh/authorized_keys</span><br><span class="line">sudo chown circleci:circleci /home/circleci/.ssh/</span><br><span class="line">sudo chown circleci:circleci /home/circleci/.ssh/authorized_keys</span><br><span class="line">sudo chmod 700 /home/circleci/.ssh/</span><br><span class="line">sudo chmod 600 /home/circleci/.ssh/authorized_keys</span><br></pre></td></tr></table></figure><p>导入公钥</p><p>将公钥文件导入 <code>/home/circleci/.ssh/authorized_keys</code></p><h2 id="赋予-circleci-用户文件权限"><a href="#赋予-circleci-用户文件权限" class="headerlink" title="赋予 circleci 用户文件权限"></a>赋予 circleci 用户文件权限</h2><p>根据需要设置 circleci 权限文件，如</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chown -R circleci:circleci /srv/www</span><br></pre></td></tr></table></figure><p>根据需要重启ssh</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl restart ssh</span><br></pre></td></tr></table></figure><h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><ol><li>2020/2/19 18:31:51 首次发布</li></ol><h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;添加-circleci-用户&quot;&gt;&lt;a href=&quot;#添加-circleci-用户&quot; class=&quot;headerlink&quot; title=&quot;添加 circleci 用户&quot;&gt;&lt;/a&gt;添加 circleci 用户&lt;/h2&gt;&lt;figure
+      
+    
+    </summary>
+    
+    
+      <category term="circleci" scheme="https://lidong.me/tags/circleci/"/>
+    
+      <category term="ci" scheme="https://lidong.me/tags/ci/"/>
+    
+      <category term="ssh" scheme="https://lidong.me/tags/ssh/"/>
+    
+  </entry>
   
   <entry>
     <title>Flutter 组件示例</title>
@@ -223,9 +284,9 @@
     
       <category term="web" scheme="https://lidong.me/tags/web/"/>
     
-      <category term="api" scheme="https://lidong.me/tags/api/"/>
-    
       <category term="html" scheme="https://lidong.me/tags/html/"/>
+    
+      <category term="api" scheme="https://lidong.me/tags/api/"/>
     
       <category term="file" scheme="https://lidong.me/tags/file/"/>
     
@@ -247,6 +308,8 @@
     </summary>
     
     
+      <category term="ssh" scheme="https://lidong.me/tags/ssh/"/>
+    
       <category term="docker" scheme="https://lidong.me/tags/docker/"/>
     
       <category term="git" scheme="https://lidong.me/tags/git/"/>
@@ -260,8 +323,6 @@
       <category term="vim" scheme="https://lidong.me/tags/vim/"/>
     
       <category term="hosts" scheme="https://lidong.me/tags/hosts/"/>
-    
-      <category term="ssh" scheme="https://lidong.me/tags/ssh/"/>
     
       <category term="nodejs" scheme="https://lidong.me/tags/nodejs/"/>
     
@@ -301,9 +362,9 @@
     <link href="https://lidong.me/docker-compose/"/>
     <id>https://lidong.me/docker-compose/</id>
     <published>2018-12-18T17:28:58.000Z</published>
-    <updated>2018-12-18T17:28:58.000Z</updated>
+    <updated>2020-02-20T13:00:58.000Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="docker-compose安装"><a href="#docker-compose安装" class="headerlink" title="docker-compose安装"></a>docker-compose安装</h2><p>参看<a href="https://docs.docker.com/compose/install/#install-compose" target="_blank" rel="noopener">官方文档</a></p><p>Linux版安装</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo curl -L https://github.com/docker/compose/releases/download/1.23.2/docker-compose-`uname -s`-`uname -m` -o /usr/<span class="built_in">local</span>/bin/docker-compose</span><br><span class="line">sudo chmod +x /usr/<span class="built_in">local</span>/bin/docker-compose</span><br></pre></td></tr></table></figure><p>验证安装是否成功</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ docker-compose --version</span><br></pre></td></tr></table></figure><blockquote><p>docker-compose version 1.23.2, build 1110ad01</p></blockquote><p>修改 <code>docker-compose.yml</code> 文件后，智能更新运行中 docker container（重建受改动部分影响的容器）</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure><p>强制重新创建container</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker-compose up -d --force-recreate</span><br></pre></td></tr></table></figure><h2 id="可能遇到的问题"><a href="#可能遇到的问题" class="headerlink" title="可能遇到的问题"></a>可能遇到的问题</h2><p>Q: <code>sudo: docker-compose：找不到命令</code></p><p>A:</p><p>方案一：切换为root用户后重新执行安装命令</p><p>方案二：可以使用</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo `which docker-compose` ...</span><br></pre></td></tr></table></figure><p>替代原来的</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo docker-compose ...</span><br></pre></td></tr></table></figure><p>参考链接：<a href="https://stackoverflow.com/questions/38775954/sudo-docker-compose-command-not-found" target="_blank" rel="noopener">https://stackoverflow.com/questions/38775954/sudo-docker-compose-command-not-found</a></p><h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><ol><li>2018/12/18 17:28:58 首次发布</li></ol>]]></content>
+    <content type="html"><![CDATA[<h2 id="docker-compose安装"><a href="#docker-compose安装" class="headerlink" title="docker-compose安装"></a>docker-compose安装</h2><p>参看<a href="https://docs.docker.com/compose/install/#install-compose" target="_blank" rel="noopener">官方文档</a></p><p>Linux版安装</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo curl -L https://github.com/docker/compose/releases/download/1.25.4/docker-compose-`uname -s`-`uname -m` -o /usr/<span class="built_in">local</span>/bin/docker-compose</span><br><span class="line">sudo chmod +x /usr/<span class="built_in">local</span>/bin/docker-compose</span><br></pre></td></tr></table></figure><p>验证安装是否成功</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ docker-compose --version</span><br></pre></td></tr></table></figure><blockquote><p>docker-compose version 1.25.4, build 8d51620a</p></blockquote><p>修改 <code>docker-compose.yml</code> 文件后，智能更新运行中 docker container（重建受改动部分影响的容器）</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure><p>强制重新创建container</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker-compose up -d --force-recreate</span><br></pre></td></tr></table></figure><h2 id="可能遇到的问题"><a href="#可能遇到的问题" class="headerlink" title="可能遇到的问题"></a>可能遇到的问题</h2><p>Q: <code>sudo: docker-compose：找不到命令</code></p><p>A:</p><p>方案一：切换为root用户后重新执行安装命令</p><p>方案二：可以使用</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo `which docker-compose` ...</span><br></pre></td></tr></table></figure><p>替代原来的</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo docker-compose ...</span><br></pre></td></tr></table></figure><p>参考链接：<a href="https://stackoverflow.com/questions/38775954/sudo-docker-compose-command-not-found" target="_blank" rel="noopener">https://stackoverflow.com/questions/38775954/sudo-docker-compose-command-not-found</a></p><h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><ol><li>2018/12/18 17:28:58 首次发布</li><li>2020/2/20 13:00:58 更新 docker-compose 版本</li></ol>]]></content>
     
     <summary type="html">
     
@@ -480,11 +541,11 @@
     </summary>
     
     
+      <category term="ci" scheme="https://lidong.me/tags/ci/"/>
+    
       <category term="hexo" scheme="https://lidong.me/tags/hexo/"/>
     
       <category term="travis-ci" scheme="https://lidong.me/tags/travis-ci/"/>
-    
-      <category term="ci" scheme="https://lidong.me/tags/ci/"/>
     
   </entry>
   
@@ -692,9 +753,9 @@
     </summary>
     
     
-      <category term="l2tp" scheme="https://lidong.me/tags/l2tp/"/>
-    
       <category term="vpn" scheme="https://lidong.me/tags/vpn/"/>
+    
+      <category term="l2tp" scheme="https://lidong.me/tags/l2tp/"/>
     
   </entry>
   
@@ -1077,18 +1138,18 @@
     <link href="https://lidong.me/initial-server-setup/"/>
     <id>https://lidong.me/initial-server-setup/</id>
     <published>2017-06-20T00:15:00.000Z</published>
-    <updated>2017-06-20T00:15:00.000Z</updated>
+    <updated>2020-02-19T19:45:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="添加用户"><a href="#添加用户" class="headerlink" title="添加用户"></a>添加用户</h2><blockquote><p>请将下面提到dong替换成你自己的用户名</p></blockquote><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 添加用户</span></span><br><span class="line">adduser dong</span><br><span class="line"><span class="meta">#</span><span class="bash"> 设置密码</span></span><br><span class="line">passwd dong</span><br></pre></td></tr></table></figure><blockquote><p>添加用户还有另一种方法</p><p>在centos7系统中会创建用户的home目录，但在ubuntu17.10系统不会创建用户的home目录(其他版本请自测)</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">useradd dong</span><br></pre></td></tr></table></figure><h2 id="添加-sudo-用户权限"><a href="#添加-sudo-用户权限" class="headerlink" title="添加 sudo 用户权限"></a>添加 <code>sudo</code> 用户权限</h2><blockquote><p>强烈建议不要使用修改<code>/etc/sudoers</code>的方法，一旦修改出错，后果很严重</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">usermod -aG sudo dong (ubuntu)</span><br><span class="line">usermod -aG wheel dong (centos)</span><br></pre></td></tr></table></figure><blockquote><p>参考链接：</p><p><a href="https://www.digitalocean.com/community/tutorials/how-to-create-a-sudo-user-on-centos-quickstart" target="_blank" rel="noopener">How To Create a Sudo User on CentOS</a></p><p><a href="https://askubuntu.com/questions/7477/how-can-i-add-a-new-user-as-sudoer-using-the-command-line" target="_blank" rel="noopener">How can I add a new user as sudoer using the command line</a></p></blockquote><h2 id="设置使用ssh-key远程登录"><a href="#设置使用ssh-key远程登录" class="headerlink" title="设置使用ssh-key远程登录"></a>设置使用ssh-key远程登录</h2><p>如果本地机器是MacOS系统或Linux系统，可以使用<code>ssh-copy-id</code>快速导入将公钥远程主机</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-copy-id -i ~/.ssh/id_rsa.pub user@ip</span><br></pre></td></tr></table></figure><p>如果本地是Windows系统，请参考 <a href="https://lidong.me/blog/ssh-key/#拷贝公钥到远程主机">https://lidong.me/blog/ssh-key/#拷贝公钥到远程主机</a></p><h2 id="调整ssh远程登录的设置"><a href="#调整ssh远程登录的设置" class="headerlink" title="调整ssh远程登录的设置"></a>调整ssh远程登录的设置</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim /etc/ssh/sshd_config</span></span><br></pre></td></tr></table></figure><p>修改配置文件中下面字段内容</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">PubkeyAuthentication yes  //允许使用基于密钥认证的方式登陆</span><br><span class="line">PasswordAuthentication no //禁止使用基于口令认证的方式登陆</span><br><span class="line">PermitRootLogin no        //禁止root用户远程登录</span><br></pre></td></tr></table></figure><p>重启sshd</p><blockquote><p>在重启sshd之前务必确保密钥登陆的可用，否则重启sshd之后可能无法远程登陆！</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl reload sshd</span><br></pre></td></tr></table></figure><h2 id="禁止用户登录"><a href="#禁止用户登录" class="headerlink" title="禁止用户登录"></a>禁止用户登录</h2><h3 id="方法一：禁止个别用户登录"><a href="#方法一：禁止个别用户登录" class="headerlink" title="方法一：禁止个别用户登录"></a>方法一：禁止个别用户登录</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">禁止个别用户登录。比如禁止dong用户登录。</span><br><span class="line">passwd -l dong</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 锁定dong用户，这样该用户就不能登录了。</span></span><br><span class="line">passwd -u dong</span><br></pre></td></tr></table></figure><p>对锁定的用户dong进行解锁，用户可登录了。</p><h3 id="方法二：禁止部分用户登录"><a href="#方法二：禁止部分用户登录" class="headerlink" title="方法二：禁止部分用户登录"></a>方法二：禁止部分用户登录</h3><p>通过修改 <code>/etc/passwd</code> 文件中用户登录的shell</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/passwd</span><br></pre></td></tr></table></figure><blockquote><p>root:x:0:0:root:/root:/bin/bash<br>bin:x:1:1:bin:/bin:/sbin/nologin<br>daemon:x:2:2:daemon:/sbin:/sbin/nologin<br>adm:x:3:4:adm:/var/adm:/sbin/nologin<br>lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin<br>sync:x:5:0:sync:/sbin:/bin/sync<br>shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown<br>halt:x:7:0:halt:/sbin:/sbin/halt<br>mail:x:8:12:mail:/var/spool/mail:/sbin/nologin<br>uucp:x:10:14:uucp:/var/spool/uucp:/sbin/nologin<br>operator:x:11:0:operator:/root:/sbin/nologin<br>games:x:12:100:games:/usr/games:/sbin/nologin<br>dong:x:500:500::/home/dong:/bin/bash</p></blockquote><p>将</p><blockquote><p><code>dong:x:500:500::/home/dong:/bin/bash</code></p></blockquote><p>更改为：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dong:x:500:500::/home/dong:/sbin/nologin</span><br></pre></td></tr></table></figure><p>该用户就无法登录了。</p><h3 id="方案三：禁止所有用户登录"><a href="#方案三：禁止所有用户登录" class="headerlink" title="方案三：禁止所有用户登录"></a>方案三：禁止所有用户登录</h3><p>禁止所有用户登录。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch /etc/nologin</span><br></pre></td></tr></table></figure><p>除root以外的用户不能登录了。</p><h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><ol><li>2017/06/20 0:15:00</li><li>2019/01/03 20:43:11 添加禁止用户登录的方法</li></ol>]]></content>
+    <content type="html"><![CDATA[<h2 id="添加用户"><a href="#添加用户" class="headerlink" title="添加用户"></a>添加用户</h2><blockquote><p>请将下面提到 ryan 替换成你自己的用户名</p></blockquote><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 添加用户</span></span><br><span class="line">adduser ryan</span><br><span class="line"><span class="meta">#</span><span class="bash"> 设置密码</span></span><br><span class="line">passwd ryan</span><br></pre></td></tr></table></figure><blockquote><p>添加用户还有另一种方法</p><p>在centos7系统中会创建用户的home目录，但在ubuntu17.10系统不会创建用户的home目录(其他版本请自测)</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">useradd ryan</span><br></pre></td></tr></table></figure><h2 id="添加-sudo-用户权限"><a href="#添加-sudo-用户权限" class="headerlink" title="添加 sudo 用户权限"></a>添加 <code>sudo</code> 用户权限</h2><blockquote><p>强烈建议不要使用修改<code>/etc/sudoers</code>的方法，一旦修改出错，后果很严重</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">usermod -aG sudo ryan (ubuntu)</span><br><span class="line">usermod -aG wheel ryan (centos)</span><br></pre></td></tr></table></figure><blockquote><p>参考链接：</p><p><a href="https://www.digitalocean.com/community/tutorials/how-to-create-a-sudo-user-on-centos-quickstart" target="_blank" rel="noopener">How To Create a Sudo User on CentOS</a></p><p><a href="https://askubuntu.com/questions/7477/how-can-i-add-a-new-user-as-sudoer-using-the-command-line" target="_blank" rel="noopener">How can I add a new user as sudoer using the command line</a></p></blockquote><h2 id="设置使用ssh-key远程登录"><a href="#设置使用ssh-key远程登录" class="headerlink" title="设置使用ssh-key远程登录"></a>设置使用ssh-key远程登录</h2><p>如果本地机器是MacOS系统或Linux系统，可以使用<code>ssh-copy-id</code>快速导入将公钥远程主机</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-copy-id -i ~/.ssh/id_rsa.pub user@ip</span><br></pre></td></tr></table></figure><p>如果本地是Windows系统，请参考 <a href="https://lidong.me/blog/ssh-key/#拷贝公钥到远程主机">https://lidong.me/blog/ssh-key/#拷贝公钥到远程主机</a></p><h2 id="调整ssh远程登录的设置"><a href="#调整ssh远程登录的设置" class="headerlink" title="调整ssh远程登录的设置"></a>调整ssh远程登录的设置</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim /etc/ssh/sshd_config</span></span><br></pre></td></tr></table></figure><p>修改配置文件中下面字段内容</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">PubkeyAuthentication yes  //允许使用基于密钥认证的方式登陆</span><br><span class="line">PasswordAuthentication no //禁止使用基于口令认证的方式登陆</span><br><span class="line">PermitRootLogin no        //禁止root用户远程登录</span><br></pre></td></tr></table></figure><p>重启sshd</p><blockquote><p>在重启sshd之前务必确保密钥登陆的可用，否则重启sshd之后可能无法远程登陆！</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl reload sshd</span><br></pre></td></tr></table></figure><h2 id="禁止用户登录"><a href="#禁止用户登录" class="headerlink" title="禁止用户登录"></a>禁止用户登录</h2><h3 id="方法一：禁止个别用户登录"><a href="#方法一：禁止个别用户登录" class="headerlink" title="方法一：禁止个别用户登录"></a>方法一：禁止个别用户登录</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 禁止个别用户登录。比如禁止ryan用户登录。</span></span><br><span class="line">passwd -l ryan</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 锁定ryan用户，这样该用户就不能登录了。</span></span><br><span class="line">passwd -u ryan</span><br></pre></td></tr></table></figure><p>对锁定的用户ryan进行解锁，用户可登录了。</p><h3 id="方法二：禁止部分用户登录"><a href="#方法二：禁止部分用户登录" class="headerlink" title="方法二：禁止部分用户登录"></a>方法二：禁止部分用户登录</h3><p>通过修改 <code>/etc/passwd</code> 文件中用户登录的shell</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/passwd</span><br></pre></td></tr></table></figure><blockquote><p>root:x:0:0:root:/root:/bin/bash<br>bin:x:1:1:bin:/bin:/sbin/nologin<br>daemon:x:2:2:daemon:/sbin:/sbin/nologin<br>adm:x:3:4:adm:/var/adm:/sbin/nologin<br>lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin<br>sync:x:5:0:sync:/sbin:/bin/sync<br>shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown<br>halt:x:7:0:halt:/sbin:/sbin/halt<br>mail:x:8:12:mail:/var/spool/mail:/sbin/nologin<br>uucp:x:10:14:uucp:/var/spool/uucp:/sbin/nologin<br>operator:x:11:0:operator:/root:/sbin/nologin<br>games:x:12:100:games:/usr/games:/sbin/nologin<br>ryan:x:500:500::/home/ryan:/bin/bash</p></blockquote><p>将</p><blockquote><p><code>ryan:x:500:500::/home/ryan:/bin/bash</code></p></blockquote><p>更改为：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ryan:x:500:500::/home/ryan:/sbin/nologin</span><br></pre></td></tr></table></figure><p>该用户就无法登录了。</p><h3 id="方案三：禁止所有用户登录"><a href="#方案三：禁止所有用户登录" class="headerlink" title="方案三：禁止所有用户登录"></a>方案三：禁止所有用户登录</h3><p>禁止所有用户登录。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch /etc/nologin</span><br></pre></td></tr></table></figure><p>除root以外的用户不能登录了。</p><h3 id="接下来可能要做事情"><a href="#接下来可能要做事情" class="headerlink" title="接下来可能要做事情"></a>接下来可能要做事情</h3><ol><li><a href="https://help.aliyun.com/document_detail/90529.html" target="_blank" rel="noopener">挂载NFS文件系统</a></li><li><a href="https://lidong.me/blog/docker-ce-install/">安装 docker</a></li><li><a href="https://lidong.me/blog/docker-compose/">安装 docker-compose</a></li><li><a href="https://lidong.me/blog/circleci-ssh-setup/">Circleci SSH 服务端设置</a></li><li><a href="https://lidong.me/blog/letsencrypt-dns-api/">SSL 证书配置</a></li></ol><h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><ol><li>2017/06/20 00:15:00</li><li>2019/01/03 20:43:11 添加禁止用户登录的方法</li><li>2020/02/19 19:45:00<ul><li>修改用户名</li><li>添加“接下来”链接指引</li></ul></li></ol>]]></content>
     
     <summary type="html">
     
       
       
         &lt;h2 id=&quot;添加用户&quot;&gt;&lt;a href=&quot;#添加用户&quot; class=&quot;headerlink&quot; title=&quot;添加用户&quot;&gt;&lt;/a&gt;添加用户&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;请将下面提到dong替换成你自己的用户名&lt;/p&gt;
+&lt;p&gt;请将下面提到 ryan 替换成你自己的用户名&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;figure cl
+&lt;figure 
       
     
     </summary>
@@ -1213,46 +1274,6 @@
     
     
       <category term="webpack" scheme="https://lidong.me/tags/webpack/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>http服务-包含http204服务</title>
-    <link href="https://lidong.me/http/"/>
-    <id>https://lidong.me/http/</id>
-    <published>2017-03-14T23:37:00.000Z</published>
-    <updated>2017-03-14T23:37:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>众所周知，正常情况联网，并不能联机到google的。所以android手机网络标示处会出现感叹号，提示无法连接网络。<br><a id="more"></a><br>一直以来我都是不做消除感叹号的，前两天看到v2ex在讨论204服务时，有人推荐使用 <a href="http://httpbin.org" target="_blank" rel="noopener">http://httpbin.org</a> 的204状态码，看了它的功能，不算难。</p><p>于是就想自己也可以弄一个，而且可以监控服务器是否在线。哈哈，一举多得。</p><p>那个网站是使用python做的。我刚刚学习NodeJS，于是用NodeJS做了一个，不过只做了为数不多的几个功能，当然包含http204啦，而且有两个。</p><p>欢迎使用<br><a href="//http.lidong.me">//http.lidong.me</a>;<br>源码地址：<a href="https://github.com/oonnnoo/http" target="_blank" rel="noopener">GitHub</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;众所周知，正常情况联网，并不能联机到google的。所以android手机网络标示处会出现感叹号，提示无法连接网络。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="http" scheme="https://lidong.me/tags/http/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用firebase制作评论框</title>
-    <link href="https://lidong.me/firebase-comment/"/>
-    <id>https://lidong.me/firebase-comment/</id>
-    <published>2017-03-13T22:06:09.000Z</published>
-    <updated>2017-03-13T22:06:09.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>想做一个简单应用，不想搭建后台，也不知道怎么搭建后台。<br><a id="more"></a><br>很早就知道什么leancloud，什么野狗等等，但是才疏学浅，不知何用，无从下手。最近知道Google Firebase，跑去学习了一下，有中文文档，最最重要的是有视频教程！！</p><p>简单做了一个评论框，后期可以用到博客中的评论中。</p><p>GitHub地址：<a href="https://github.com/oonnnoo/firebase-comment" target="_blank" rel="noopener">https://github.com/oonnnoo/firebase-comment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;想做一个简单应用，不想搭建后台，也不知道怎么搭建后台。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="firebase" scheme="https://lidong.me/tags/firebase/"/>
     
   </entry>
   

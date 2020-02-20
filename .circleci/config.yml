@@ -47,11 +47,11 @@ jobs:
 
       - deploy:
           name: Deploy via github page
+          # 先 clone 再 commit，避免直接 force commit
           command: |
             export TZ='Asia/Shanghai'
             git config --global user.name "$GIT_USER"
             git config --global user.email "$GIT_EMAIL"
-          # 先 clone 再 commit，避免直接 force commit
             git clone -b gh-pages https://github.com/ryanlid/blog.git .deploy_git
             cd .deploy_git
             git checkout gh-pages

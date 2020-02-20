@@ -43,9 +43,9 @@
     
       <category term="docker" scheme="https://lidong.me/tags/docker/"/>
     
-      <category term="api" scheme="https://lidong.me/tags/api/"/>
-    
       <category term="dns-api" scheme="https://lidong.me/tags/dns-api/"/>
+    
+      <category term="api" scheme="https://lidong.me/tags/api/"/>
     
   </entry>
   
@@ -753,9 +753,9 @@
     </summary>
     
     
-      <category term="vpn" scheme="https://lidong.me/tags/vpn/"/>
-    
       <category term="l2tp" scheme="https://lidong.me/tags/l2tp/"/>
+    
+      <category term="vpn" scheme="https://lidong.me/tags/vpn/"/>
     
   </entry>
   

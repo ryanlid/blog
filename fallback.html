@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>加载失败</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB,
+          Microsoft YaHei, SimSun, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #5e6d82;
+        line-height: 1.5em;
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .wrap {
+        margin-top: 10px;
+      }
+      button {
+        display: inline-block;
+        line-height: 1;
+        white-space: nowrap;
+        cursor: pointer;
+        -webkit-appearance: none;
+        text-align: center;
+        box-sizing: border-box;
+        outline: none;
+        margin: 0;
+        transition: 0.1s;
+        font-weight: 500;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        padding: 12px 20px;
+        font-size: 14px;
+        border-radius: 4px;
+        color: #fff;
+        background-color: #909399;
+        border-color: #909399;
+      }
+      button:active {
+        background: #82848a;
+        border-color: #82848a;
+        color: #fff;
+      }
+      button:hover,
+      button:focus {
+        background: #a6a9ad;
+        border-color: #a6a9ad;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        加载失败，请检查网络
+      </div>
+      <div class="wrap">
+        <button id="goback">返回上一页</button>
+      </div>
+    </div>
+    <script>
+      document.getElementById("goback").addEventListener("click", function() {
+        window.history.go(-1);
+      });
+    </script>
+  </body>
+</html>

@@ -1,6 +1,6 @@
 # BLOG
 
-[![Travis CI](https://travis-ci.org/ryanlid/blog.svg?branch=master)](https://travis-ci.org/ryanlid/blog)
+[![CircleCI](https://circleci.com/gh/ryanlid/blog.svg?style=svg)](https://circleci.com/gh/ryanlid/blog)
 
 😝 欢迎访问我的 Blog
 

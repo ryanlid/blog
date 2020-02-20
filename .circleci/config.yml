@@ -1,0 +1,63 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:lts
+    working_directory: ~/project
+
+    steps:
+      - checkout
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+            - chat-{{ checksum "package.json" }}
+            # fallback to using the latest cache if no exact match is found
+            - chat-
+      - run:
+          name: Install && generate
+          command: |
+            yarn install && yarn generate && pwd && ls
+      - save_cache:
+          paths:
+            - node_modules
+          key: chat-{{ checksum "package.json" }}
+
+      - run:
+          name: Update System
+          command: |
+            sudo apt-get update && sudo apt-get install rsync
+
+      - deploy:
+          name: Deploy via ssh
+          command: |
+            mkdir -p ~/.ssh
+            touch ~/.ssh/known_hosts
+            { ssh-keyscan $SSH_HOST 2> /dev/null; } >> ~/.ssh/known_hosts
+            pwd
+            ls
+            if [ ${CIRCLE_BRANCH} = "master" ];then
+                rsync -az -v --delete -e ssh /home/circleci/project/dist/* $SSH_USER@$SSH_HOST:/srv/chat/
+            else
+                echo "Not master branch"
+            fi
+
+      - deploy:
+          name: Deploy via github page
+          command: |
+            export TZ='Asia/Shanghai'
+            git config --global user.name "$GIT_USER"
+            git config --global user.email "$GIT_EMAIL"
+          # 先 clone 再 commit，避免直接 force commit
+            git clone -b gh-pages https://github.com/ryanlid/blog.git .deploy_git
+            cd .deploy_git
+            git checkout gh-pages
+            mv .git/ ../public/
+            cd ../public
+            git add .
+            git commit -m "Site updated: `date +"%Y-%m-%d %H:%M:%S"`"
+            git push --quiet --force https://$REPO_TOKEN@github.com/ryanlid/blog gh-pages:gh-pages
+

@@ -10,6 +10,8 @@ category:
 description:
 ---
 
+## 初始化
+
 ```sh
 npm init -y
 ```
@@ -18,10 +20,14 @@ npm init -y
 npm i express dotenv jsonwebtoken
 ```
 
+## 环境变量
+
 ```env .env
 ACCESS_TOKEN_SECRET=dbf8de
 REFRESH_TOKEN_SECRET=7ac2a3
 ```
+
+## 项目代码
 
 ```js app.js
 const express = require("express");
@@ -108,7 +114,7 @@ function generateAccessToken(user) {
 app.listen(3000);
 ```
 
-### 请求示例
+## 请求示例
 
 ```http request.http
 ###

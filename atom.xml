@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://lidong.me/"/>
-  <updated>2020-03-07T14:53:13.000Z</updated>
+  <updated>2020-05-31T17:11:13.000Z</updated>
   <id>https://lidong.me/</id>
   
   <author>
@@ -15,6 +15,76 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>socketio</title>
+    <link href="https://lidong.me/socketio/"/>
+    <id>https://lidong.me/socketio/</id>
+    <published>2020-05-31T17:11:13.000Z</published>
+    <updated>2020-05-31T17:11:13.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="服务端发送消息"><a href="#服务端发送消息" class="headerlink" title="服务端发送消息"></a>服务端发送消息</h2><p>给本次连接发消息</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">socket.emit();</span><br></pre></td></tr></table></figure><p>给某个房间内所有人发消息</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">io.in(room).emit();</span><br></pre></td></tr></table></figure><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">io.sockets.in(room).emit;</span><br></pre></td></tr></table></figure><p>除了本连接外，给房间所有人发消息</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">socket.to(room).emit();</span><br></pre></td></tr></table></figure><p>除了本连接外，给所有人发消息</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">socket.broadcast.emit();</span><br></pre></td></tr></table></figure><h2 id="客户端处理消息"><a href="#客户端处理消息" class="headerlink" title="客户端处理消息"></a>客户端处理消息</h2><p>发送 action 命令</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s: socket.emit(<span class="string">'action'</span>);</span><br><span class="line">c: socket.on(<span class="string">'action'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;&#125;);</span><br></pre></td></tr></table></figure><p>发送 action 命令,包含 data</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s: socket.emit(<span class="string">'action'</span>, data);</span><br><span class="line">c: socket.on(<span class="string">'action'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;&#125;);</span><br></pre></td></tr></table></figure><p>发送 action 命令,包含两个参数 data</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s: socket.emit(<span class="string">'action'</span>, arg1, arg2);</span><br><span class="line">c: socket.on(<span class="string">'action'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">arg1, arg2</span>) </span>&#123;&#125;);</span><br></pre></td></tr></table></figure><p>发送 action 命令, 在 emit 方法中包含回调函数</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s:  socket.emit(<span class="string">'action'</span>,data,<span class="function"><span class="keyword">function</span>(<span class="params">arg1,arg2</span>));</span></span><br><span class="line"><span class="function"><span class="title">c</span>:  <span class="title">socket</span>.<span class="title">on</span>(<span class="params"><span class="string">'action'</span>,function(data,fn</span>)</span>&#123;fn(<span class="string">'a'</span>,<span class="string">'b'</span>)&#125;)</span><br></pre></td></tr></table></figure><h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><ol><li>2020/5/31 17:11:13 首次发布</li></ol><h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;服务端发送消息&quot;&gt;&lt;a href=&quot;#服务端发送消息&quot; class=&quot;headerlink&quot; title=&quot;服务端发送消息&quot;&gt;&lt;/a&gt;服务端发送消息&lt;/h2&gt;&lt;p&gt;给本次连接发消息&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>WebRTC 媒体流录制</title>
+    <link href="https://lidong.me/webrtc-media-recorder/"/>
+    <id>https://lidong.me/webrtc-media-recorder/</id>
+    <published>2020-05-29T22:30:12.000Z</published>
+    <updated>2020-05-29T22:30:12.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="MediaRecorder"><a href="#MediaRecorder" class="headerlink" title="MediaRecorder"></a>MediaRecorder</h2><p>媒体流录制</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> mediaRecorder = <span class="keyword">new</span> MediaRecorder(stream[,option]);</span><br></pre></td></tr></table></figure><table><thead><tr><th style="text-align:center">参数</th><th style="text-align:center">说明</th></tr></thead><tbody><tr><td style="text-align:center">stream</td><td style="text-align:center">媒体流，<br>可从 <code>getUserMedia</code>，<code>&lt;video&gt;</code>，<br> <code>&lt;audio&gt;</code> 或 <code>&lt;canvas&gt;</code> 获取</td></tr><tr><td style="text-align:center">options</td><td style="text-align:center">限制选项</td></tr></tbody></table><h3 id="options"><a href="#options" class="headerlink" title="options"></a>options</h3><table><thead><tr><th style="text-align:center">选项</th><th style="text-align:center">说明</th></tr></thead><tbody><tr><td style="text-align:center">mimeType</td><td style="text-align:center">video/webm<br> audio/webm <br> video/webm;codecs=vp8<br>video/webm;codecs=vp8<br> audio/webm;codecs=opus</td></tr><tr><td style="text-align:center">audioBitsPerSecond</td><td style="text-align:center">音频玛率</td></tr><tr><td style="text-align:center">videoBitsPerSecond</td><td style="text-align:center">视频玛率</td></tr><tr><td style="text-align:center">bitsPerSecond</td><td style="text-align:center">整体玛率</td></tr></tbody></table><h3 id="MediaRecorder-API"><a href="#MediaRecorder-API" class="headerlink" title="MediaRecorder API"></a>MediaRecorder API</h3><p>开启录制媒体</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MediaRecorder.start([timeslice])</span><br></pre></td></tr></table></figure><blockquote><p>timeslice 可选 如果设置了，会按照时间切片存储数据</p></blockquote><p>停止录制媒体</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MediaRecorder.stop()</span><br></pre></td></tr></table></figure><p>暂停录制</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MediaRecorder.pause()</span><br></pre></td></tr></table></figure><p>恢复录制</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MediaRecorder.resume()</span><br></pre></td></tr></table></figure><p>类型检测</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MediaRecorder.isTypeSupported()</span><br></pre></td></tr></table></figure><h3 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MediaRecorder.ondataavailable</span><br></pre></td></tr></table></figure><p>每次记录一定时间的数据时（如果没有指定时间片，则记录整个数据时）会触发</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MediaRecorder.onerror</span><br></pre></td></tr></table></figure><p>当有错误发生时，录制会被停止</p><h3 id="数据存储"><a href="#数据存储" class="headerlink" title="数据存储"></a>数据存储</h3><ul><li><p>字符串</p></li><li><p>Blob (该格式相当于对 ArrayBuffer 封装)</p></li><li><p>ArrayBuffer</p></li><li><p>ArrayBufferView</p></li></ul><h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><ol><li>2020/5/29 22:30:12 首次发布</li></ol><h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;MediaRecorder&quot;&gt;&lt;a href=&quot;#MediaRecorder&quot; class=&quot;headerlink&quot; title=&quot;MediaRecorder&quot;&gt;&lt;/a&gt;MediaRecorder&lt;/h2&gt;&lt;p&gt;媒体流录制&lt;/p&gt;
+&lt;figure class=&quot;h
+      
+    
+    </summary>
+    
+    
+      <category term="webrtc" scheme="https://lidong.me/tags/webrtc/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WebRTC 音视频采集</title>
+    <link href="https://lidong.me/webrtc-collect-audio-video/"/>
+    <id>https://lidong.me/webrtc-collect-audio-video/</id>
+    <published>2020-05-28T20:53:49.000Z</published>
+    <updated>2020-05-28T20:53:49.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>通过 <code>getUserMedia</code> 获取音视频</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> promise = navigator.mediaDevices.getUserMedia(constraints);</span><br></pre></td></tr></table></figure><p>适配不同浏览器</p><p><a href="https://webrtc.github.io/adapter/adapter-latest.js" target="_blank" rel="noopener">https://webrtc.github.io/adapter/adapter-latest.js</a></p><p>获取设备信息</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> promise = navigator.mediaDevices.enumerateDevices();</span><br></pre></td></tr></table></figure><p>视频约束</p><table><thead><tr><th style="text-align:center">参数</th><th style="text-align:center">说明</th></tr></thead><tbody><tr><td style="text-align:center">width</td><td style="text-align:center"></td></tr><tr><td style="text-align:center">height</td><td style="text-align:center"></td></tr><tr><td style="text-align:center">frameRate</td><td style="text-align:center">帧率</td></tr><tr><td style="text-align:center">facingMode</td><td style="text-align:center">摄像头选择</td></tr></tbody></table><p>facingMode 的可选值：</p><table><thead><tr><th style="text-align:center"></th><th style="text-align:center"></th></tr></thead><tbody><tr><td style="text-align:center">user</td><td style="text-align:center">前置摄像头</td></tr><tr><td style="text-align:center">environment</td><td style="text-align:center">后置</td></tr><tr><td style="text-align:center">left</td><td style="text-align:center">前置左侧</td></tr><tr><td style="text-align:center">right</td><td style="text-align:center">前置右侧</td></tr></tbody></table><p>音频约束</p><table><thead><tr><th style="text-align:center"></th><th></th></tr></thead><tbody><tr><td style="text-align:center">volume</td><td>声音大小 0~1</td></tr><tr><td style="text-align:center">sampleRate</td><td>采样率</td></tr><tr><td style="text-align:center">sampleSize</td></tr><tr><td style="text-align:center">echoCancellation</td><td>回音消除</td></tr><tr><td style="text-align:center">autoGainControl</td><td>自动增益 true /false</td></tr><tr><td style="text-align:center">noiseSuppression</td><td>降噪国内</td></tr><tr><td style="text-align:center">latency</td><td>延迟效果</td></tr><tr><td style="text-align:center">channelCount</td><td>声道</td></tr><tr><td style="text-align:center">deviceID</td><td>设备 id</td></tr><tr><td style="text-align:center">groupID</td></tr></tbody></table><p>示例</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">audio:<span class="literal">true</span></span><br><span class="line">video:&#123;</span><br><span class="line">  width:&#123;</span><br><span class="line">    min:<span class="number">300</span>,</span><br><span class="line">    max:<span class="number">640</span></span><br><span class="line">  &#125;,</span><br><span class="line">  height:&#123;</span><br><span class="line">    min:<span class="number">300</span>,</span><br><span class="line">    max:<span class="number">480</span></span><br><span class="line">    &#125;,</span><br><span class="line">    frameRate:&#123;</span><br><span class="line">      min:<span class="number">15</span>,</span><br><span class="line">      max:<span class="number">30</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><ol><li>2020/5/28 20:53:49 首次发布</li></ol><h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;通过 &lt;code&gt;getUserMedia&lt;/code&gt; 获取音视频&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/p
+      
+    
+    </summary>
+    
+    
+      <category term="webrtc" scheme="https://lidong.me/tags/webrtc/"/>
+    
+  </entry>
   
   <entry>
     <title>MongoDB 命令速查表</title>
@@ -1208,86 +1278,6 @@
       <category term="php" scheme="https://lidong.me/tags/php/"/>
     
       <category term="docker" scheme="https://lidong.me/tags/docker/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>初始服务器设置</title>
-    <link href="https://lidong.me/initial-server-setup/"/>
-    <id>https://lidong.me/initial-server-setup/</id>
-    <published>2017-06-20T00:15:00.000Z</published>
-    <updated>2020-02-19T19:45:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="添加用户"><a href="#添加用户" class="headerlink" title="添加用户"></a>添加用户</h2><blockquote><p>请将下面提到 ryan 替换成你自己的用户名</p></blockquote><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 添加用户</span></span><br><span class="line">adduser ryan</span><br><span class="line"><span class="meta">#</span><span class="bash"> 设置密码</span></span><br><span class="line">passwd ryan</span><br></pre></td></tr></table></figure><blockquote><p>添加用户还有另一种方法</p><p>在centos7系统中会创建用户的home目录，但在ubuntu17.10系统不会创建用户的home目录(其他版本请自测)</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">useradd ryan</span><br></pre></td></tr></table></figure><h2 id="添加-sudo-用户权限"><a href="#添加-sudo-用户权限" class="headerlink" title="添加 sudo 用户权限"></a>添加 <code>sudo</code> 用户权限</h2><blockquote><p>强烈建议不要使用修改<code>/etc/sudoers</code>的方法，一旦修改出错，后果很严重</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">usermod -aG sudo ryan (ubuntu)</span><br><span class="line">usermod -aG wheel ryan (centos)</span><br></pre></td></tr></table></figure><blockquote><p>参考链接：</p><p><a href="https://www.digitalocean.com/community/tutorials/how-to-create-a-sudo-user-on-centos-quickstart" target="_blank" rel="noopener">How To Create a Sudo User on CentOS</a></p><p><a href="https://askubuntu.com/questions/7477/how-can-i-add-a-new-user-as-sudoer-using-the-command-line" target="_blank" rel="noopener">How can I add a new user as sudoer using the command line</a></p></blockquote><h2 id="设置使用ssh-key远程登录"><a href="#设置使用ssh-key远程登录" class="headerlink" title="设置使用ssh-key远程登录"></a>设置使用ssh-key远程登录</h2><p>如果本地机器是MacOS系统或Linux系统，可以使用<code>ssh-copy-id</code>快速导入将公钥远程主机</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-copy-id -i ~/.ssh/id_rsa.pub user@ip</span><br></pre></td></tr></table></figure><p>如果本地是Windows系统，请参考 <a href="https://lidong.me/blog/ssh-key/#拷贝公钥到远程主机">https://lidong.me/blog/ssh-key/#拷贝公钥到远程主机</a></p><h2 id="调整ssh远程登录的设置"><a href="#调整ssh远程登录的设置" class="headerlink" title="调整ssh远程登录的设置"></a>调整ssh远程登录的设置</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim /etc/ssh/sshd_config</span></span><br></pre></td></tr></table></figure><p>修改配置文件中下面字段内容</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">PubkeyAuthentication yes  //允许使用基于密钥认证的方式登陆</span><br><span class="line">PasswordAuthentication no //禁止使用基于口令认证的方式登陆</span><br><span class="line">PermitRootLogin no        //禁止root用户远程登录</span><br></pre></td></tr></table></figure><p>重启sshd</p><blockquote><p>在重启sshd之前务必确保密钥登陆的可用，否则重启sshd之后可能无法远程登陆！</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl reload sshd</span><br></pre></td></tr></table></figure><h2 id="禁止用户登录"><a href="#禁止用户登录" class="headerlink" title="禁止用户登录"></a>禁止用户登录</h2><h3 id="方法一：禁止个别用户登录"><a href="#方法一：禁止个别用户登录" class="headerlink" title="方法一：禁止个别用户登录"></a>方法一：禁止个别用户登录</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 禁止个别用户登录。比如禁止ryan用户登录。</span></span><br><span class="line">passwd -l ryan</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 锁定ryan用户，这样该用户就不能登录了。</span></span><br><span class="line">passwd -u ryan</span><br></pre></td></tr></table></figure><p>对锁定的用户ryan进行解锁，用户可登录了。</p><h3 id="方法二：禁止部分用户登录"><a href="#方法二：禁止部分用户登录" class="headerlink" title="方法二：禁止部分用户登录"></a>方法二：禁止部分用户登录</h3><p>通过修改 <code>/etc/passwd</code> 文件中用户登录的shell</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/passwd</span><br></pre></td></tr></table></figure><blockquote><p>root:x:0:0:root:/root:/bin/bash<br>bin:x:1:1:bin:/bin:/sbin/nologin<br>daemon:x:2:2:daemon:/sbin:/sbin/nologin<br>adm:x:3:4:adm:/var/adm:/sbin/nologin<br>lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin<br>sync:x:5:0:sync:/sbin:/bin/sync<br>shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown<br>halt:x:7:0:halt:/sbin:/sbin/halt<br>mail:x:8:12:mail:/var/spool/mail:/sbin/nologin<br>uucp:x:10:14:uucp:/var/spool/uucp:/sbin/nologin<br>operator:x:11:0:operator:/root:/sbin/nologin<br>games:x:12:100:games:/usr/games:/sbin/nologin<br>ryan:x:500:500::/home/ryan:/bin/bash</p></blockquote><p>将</p><blockquote><p><code>ryan:x:500:500::/home/ryan:/bin/bash</code></p></blockquote><p>更改为：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ryan:x:500:500::/home/ryan:/sbin/nologin</span><br></pre></td></tr></table></figure><p>该用户就无法登录了。</p><h3 id="方案三：禁止所有用户登录"><a href="#方案三：禁止所有用户登录" class="headerlink" title="方案三：禁止所有用户登录"></a>方案三：禁止所有用户登录</h3><p>禁止所有用户登录。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch /etc/nologin</span><br></pre></td></tr></table></figure><p>除root以外的用户不能登录了。</p><h3 id="接下来可能要做事情"><a href="#接下来可能要做事情" class="headerlink" title="接下来可能要做事情"></a>接下来可能要做事情</h3><ol><li><a href="https://help.aliyun.com/document_detail/90529.html" target="_blank" rel="noopener">挂载NFS文件系统</a></li><li><a href="https://lidong.me/blog/docker-ce-install/">安装 docker</a></li><li><a href="https://lidong.me/blog/docker-compose/">安装 docker-compose</a></li><li><a href="https://lidong.me/blog/circleci-ssh-setup/">Circleci SSH 服务端设置</a></li><li><a href="https://lidong.me/blog/letsencrypt-dns-api/">SSL 证书配置</a></li></ol><h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><ol><li>2017/06/20 00:15:00</li><li>2019/01/03 20:43:11 添加禁止用户登录的方法</li><li>2020/02/19 19:45:00<ul><li>修改用户名</li><li>添加“接下来”链接指引</li></ul></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;添加用户&quot;&gt;&lt;a href=&quot;#添加用户&quot; class=&quot;headerlink&quot; title=&quot;添加用户&quot;&gt;&lt;/a&gt;添加用户&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;请将下面提到 ryan 替换成你自己的用户名&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;figure 
-      
-    
-    </summary>
-    
-    
-      <category term="centos" scheme="https://lidong.me/tags/centos/"/>
-    
-      <category term="linux" scheme="https://lidong.me/tags/linux/"/>
-    
-      <category term="ubuntu" scheme="https://lidong.me/tags/ubuntu/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>curl</title>
-    <link href="https://lidong.me/curl/"/>
-    <id>https://lidong.me/curl/</id>
-    <published>2017-05-09T22:53:07.000Z</published>
-    <updated>2017-05-09T22:53:07.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="命令参数"><a href="#命令参数" class="headerlink" title="命令参数"></a>命令参数</h2><p>显示输出内容</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl http://example.com</span><br></pre></td></tr></table></figure><p><code>-i</code> 输出响应头信息和内容</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -i http://example.com</span><br></pre></td></tr></table></figure><p><code>--head</code> <code>-I</code> 输出响应头信息</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl --head http://example.com</span><br><span class="line">curl -I http://example.com</span><br></pre></td></tr></table></figure><p><code>-o</code> 输出内容到文件，另存为</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl http://example.com/hello.txt -o hello.txt</span><br></pre></td></tr></table></figure><p><code>-O</code> 输出内容到文件，保持原文件名</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -o http://example.com /hello.txt</span><br></pre></td></tr></table></figure><p><code>-d</code> post请求中的data</p><p>post请求</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -d &quot;title=hello&amp;&amp;body=hello world&quot; http://</span><br></pre></td></tr></table></figure><p><code>-X</code> 设置请求方式</p><p>put请求</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -X put -d &quot;title=hello&amp;&amp;body=hello world&quot; http://</span><br></pre></td></tr></table></figure><p><code>-L</code>  跟踪跳转（Follow redirects）</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl http://google.com</span><br><span class="line">curl -L http://google.com</span><br></pre></td></tr></table></figure><p><code>-u</code> 上传</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -u user@example.com:123456 -T hello.txt ftp://ftp.expample.com</span><br></pre></td></tr></table></figure><p>下载</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -u user@example.com:123456 -o hello.txt ftp://ftp.expample.com/hello.txt</span><br></pre></td></tr></table></figure><h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><ol><li>2017-05-09 首次发布</li></ol><h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://www.youtube.com/watch?v=7XUibDYw4mc" target="_blank" rel="noopener">https://www.youtube.com/watch?v=7XUibDYw4mc</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;命令参数&quot;&gt;&lt;a href=&quot;#命令参数&quot; class=&quot;headerlink&quot; title=&quot;命令参数&quot;&gt;&lt;/a&gt;命令参数&lt;/h2&gt;&lt;p&gt;显示输出内容&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td clas
-      
-    
-    </summary>
-    
-    
-      <category term="curl" scheme="https://lidong.me/tags/curl/"/>
-    
-      <category term="命令" scheme="https://lidong.me/tags/%E5%91%BD%E4%BB%A4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>反向代理apt镜像</title>
-    <link href="https://lidong.me/mirrors-reverse-proxy/"/>
-    <id>https://lidong.me/mirrors-reverse-proxy/</id>
-    <published>2017-05-08T00:22:17.000Z</published>
-    <updated>2017-06-30T01:30:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>通过apt镜像，可以快速的安装软件包，但由于部分镜像地址直接访问有困难，所以我对这些镜像地址使用nginx搭建了一个反向代理。如需使用，请修改 <code>/etc/apt/sources.list.d/</code> 中对应文件中URL。</p><a id="more"></a><p>虽然我是为了方便在树莓派上安装而搭建反向代理，但大多数镜像地址是可以安装所有的版本的相关软件包，需要使用请自行尝试，更多信息 <a href="https://apt.proxy.oonnnoo.com/" target="_blank" rel="noopener">👇戳这里</a>。如有疑问可以邮件联系我  <img src="https://static.lidong.me/img/email-x28.png" alt="email"></p><h2 id="镜像地址替换"><a href="#镜像地址替换" class="headerlink" title="镜像地址替换"></a>镜像地址替换</h2><p> <code>#</code> 开头为为注释内容，是原地址，</p><ul><li><p>docker</p>  <figure class="highlight plain"><figcaption><span>docker.list</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">deb [arch=armhf] https://apt.proxy.oonnnoo.com/docker/repo raspbian-jessie main</span><br><span class="line">#deb [arch=armhf] https://apt.dockerproject.org/repo raspbian-jessie main</span><br></pre></td></tr></table></figure></li><li><p>gitlab</p>  <figure class="highlight plain"><figcaption><span>gitlab_raspberry-pi2.list</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deb https://apt.proxy.oonnnoo.com/gitlab/raspberry-pi2/raspbian/ jessie main</span><br><span class="line">deb-src https://apt.proxy.oonnnoo.com/gitlab/raspberry-pi2/raspbian/ jessie main</span><br><span class="line">#deb https://packages.gitlab.com/gitlab/raspberry-pi2/raspbian/ jessie main</span><br><span class="line">#deb-src https://packages.gitlab.com/gitlab/raspberry-pi2/raspbian/ jessie main</span><br></pre></td></tr></table></figure></li><li><p>syncthing</p>  <figure class="highlight plain"><figcaption><span>syncthing-release.list</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">deb http://apt.proxy.oonnnoo.com/syncthing/ syncthing release</span><br><span class="line">#deb http://apt.syncthing.net/ syncthing release</span><br></pre></td></tr></table></figure></li><li><p>megasync</p>  <figure class="highlight plain"><figcaption><span>megasync.list</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">deb https://apt.proxy.oonnnoo.com/mega/linux/MEGAsync/Raspbian_8.0/ ./</span><br><span class="line">#deb https://mega.nz/linux/MEGAsync/Raspbian_8.0/ ./</span><br></pre></td></tr></table></figure></li></ul><h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><ol><li>2017-05-08 首次发布</li><li>2017-06-30 更换 mega 代理目录名称</li></ol>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;通过apt镜像，可以快速的安装软件包，但由于部分镜像地址直接访问有困难，所以我对这些镜像地址使用nginx搭建了一个反向代理。如需使用，请修改 &lt;code&gt;/etc/apt/sources.list.d/&lt;/code&gt; 中对应文件中URL。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="代理" scheme="https://lidong.me/tags/%E4%BB%A3%E7%90%86/"/>
-    
-      <category term="nginx" scheme="https://lidong.me/tags/nginx/"/>
-    
-      <category term="镜像" scheme="https://lidong.me/tags/%E9%95%9C%E5%83%8F/"/>
     
   </entry>
   

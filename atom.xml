@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://lidong.me/"/>
-  <updated>2020-05-31T17:11:13.000Z</updated>
+  <updated>2020-06-02T23:21:31.000Z</updated>
   <id>https://lidong.me/</id>
   
   <author>
@@ -15,6 +15,64 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>WebRTC 媒体流 mediastream</title>
+    <link href="https://lidong.me/webrtc-mediastream/"/>
+    <id>https://lidong.me/webrtc-mediastream/</id>
+    <published>2020-06-02T23:21:31.000Z</published>
+    <updated>2020-06-02T23:21:31.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>添加轨</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mediaStream.addTrack();</span><br></pre></td></tr></table></figure><p>移除轨</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mediaStream.removeTrack();</span><br></pre></td></tr></table></figure><p>获取视频轨道</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mediaStream.getVideoTracks();</span><br></pre></td></tr></table></figure><p>获取音频轨道</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mediaStream.getAudioTracks();</span><br></pre></td></tr></table></figure><h3 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mediaStream.onaddtrack</span><br><span class="line">mediaStream.onremovetrack</span><br><span class="line">mediaStream.onended</span><br></pre></td></tr></table></figure><h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><ol><li>2020/6/2 23:21:31 首次发布</li></ol><h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;添加轨&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="webrtc" scheme="https://lidong.me/tags/webrtc/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WebRTC 视频滤镜</title>
+    <link href="https://lidong.me/webrtc-video-filter/"/>
+    <id>https://lidong.me/webrtc-video-filter/</id>
+    <published>2020-06-02T20:53:49.000Z</published>
+    <updated>2020-06-02T20:53:49.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>视频特效实现</p><ol><li>CSS filter, filter</li><li>video 与 filter 关联</li></ol><p>支持的特效种类</p><table><thead><tr><th style="text-align:center">特效</th><th style="text-align:center">说明</th></tr></thead><tbody><tr><td style="text-align:center">grayscale</td><td style="text-align:center">灰度</td></tr><tr><td style="text-align:center">sepia</td><td style="text-align:center">褐色</td></tr><tr><td style="text-align:center">saturate</td><td style="text-align:center">饱和度</td></tr><tr><td style="text-align:center">hue-rotate</td><td style="text-align:center">色相旋转</td></tr><tr><td style="text-align:center">invert</td><td style="text-align:center">反色</td></tr><tr><td style="text-align:center">opacity</td><td style="text-align:center">透明度</td></tr><tr><td style="text-align:center">brightness</td><td style="text-align:center">亮度</td></tr><tr><td style="text-align:center">contrast</td><td style="text-align:center">对比度</td></tr><tr><td style="text-align:center">blur</td><td style="text-align:center">模糊</td></tr><tr><td style="text-align:center">drop-shadow</td><td style="text-align:center">阴影</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;视频特效实现&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;CSS filter, filter&lt;/li&gt;
+&lt;li&gt;video 与 filter 关联&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;支持的特效种类&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:ce
+      
+    
+    </summary>
+    
+    
+      <category term="webrtc" scheme="https://lidong.me/tags/webrtc/"/>
+    
+      <category term="video" scheme="https://lidong.me/tags/video/"/>
+    
+  </entry>
   
   <entry>
     <title>socketio</title>
@@ -64,8 +122,8 @@
   
   <entry>
     <title>WebRTC 音视频采集</title>
-    <link href="https://lidong.me/webrtc-collect-audio-video/"/>
-    <id>https://lidong.me/webrtc-collect-audio-video/</id>
+    <link href="https://lidong.me/audio-and-video-capture/"/>
+    <id>https://lidong.me/audio-and-video-capture/</id>
     <published>2020-05-28T20:53:49.000Z</published>
     <updated>2020-05-28T20:53:49.000Z</updated>
     
@@ -925,9 +983,9 @@
     
       <category term="nodejs" scheme="https://lidong.me/tags/nodejs/"/>
     
-      <category term="qrcode" scheme="https://lidong.me/tags/qrcode/"/>
-    
       <category term="小作品" scheme="https://lidong.me/tags/%E5%B0%8F%E4%BD%9C%E5%93%81/"/>
+    
+      <category term="qrcode" scheme="https://lidong.me/tags/qrcode/"/>
     
   </entry>
   
@@ -1223,61 +1281,6 @@
       <category term="android" scheme="https://lidong.me/tags/android/"/>
     
       <category term="adb" scheme="https://lidong.me/tags/adb/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用 Certbot工具，签发 Let&#39;s Encrypt 证书</title>
-    <link href="https://lidong.me/certbot-letsencrypt/"/>
-    <id>https://lidong.me/certbot-letsencrypt/</id>
-    <published>2017-06-22T21:35:49.000Z</published>
-    <updated>2017-06-22T21:35:49.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>之前是使用 <a href="https://github.com/diafygi/acme-tiny" target="_blank" rel="noopener">acme-tiny</a>获取 Let’s Encrypt 证书，但是这次弄死活就弄不上，就尝试一下用官方的工具了，用起来也很方便。<a href="https://certbot.eff.org/" target="_blank" rel="noopener">官方文档</a>写的已经很详细了。</p><p>我记录一下方便下次～🤗</p><h2 id="安装certbot工具"><a href="#安装certbot工具" class="headerlink" title="安装certbot工具"></a>安装certbot工具</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo yum -y install yum-utils</span><br><span class="line">sudo yum-config-manager --<span class="built_in">enable</span> rhui-REGION-rhel-server-extras rhui-REGION-rhel-server-optional</span><br><span class="line">sudo yum install certbot</span><br></pre></td></tr></table></figure><h2 id="配置用于验证域名访问路径"><a href="#配置用于验证域名访问路径" class="headerlink" title="配置用于验证域名访问路径"></a>配置用于验证域名访问路径</h2><p>在Nginx配置文件 <code>server{}</code> 中添加下面内容</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 下面配置的作用：</span><br><span class="line"># certbot会在 /var/www/challenges/ 中生称一个文件(xxx)，</span><br><span class="line"># Let&apos;s Encrypt 通过访问 http://lidong.me/.well-known/acme-challenge/xxx 来验证域名的归属</span><br><span class="line"></span><br><span class="line">location ^~ /.well-known/acme-challenge/ &#123;</span><br><span class="line">  root      /var/www/challenges/;</span><br><span class="line">  try_files $uri =404;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="获取证书"><a href="#获取证书" class="headerlink" title="获取证书"></a>获取证书</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># --webroot 使用webroot的插件方式（还有其他插件模式，详情请看官方文档～）</span></span><br><span class="line"><span class="comment"># -w 指定用于验证文件保存路径，确保文件可以通过域名访问到。</span></span><br><span class="line"><span class="comment"># -d 指定签发证书的域名</span></span><br><span class="line">sudo certbot certonly --webroot -w /var/www/challenges \</span><br><span class="line">-d lidong.me -d www.lidong.me</span><br></pre></td></tr></table></figure><h2 id="配置证书"><a href="#配置证书" class="headerlink" title="配置证书"></a>配置证书</h2><p>如果一切正常的话，获取后证书保存在到 <code>/etc/letsencrypt/</code> 中，通过 <code>/etc/letsencrypt/live/lidong.me/xxxx</code> 就可以使用刚刚获取的证书了。</p><p>我的设置：在Nginx的<code>server{}</code>中添加下面内容，用于指定SSL证书</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssl_certificate      /etc/letsencrypt/live/lidong.me/fullchain.pem;</span><br><span class="line">ssl_certificate_key  /etc/letsencrypt/live/lidong.me/privkey.pem;</span><br></pre></td></tr></table></figure><h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><ol><li>2017-06-22 首次发布</li></ol><h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ol><li><a href="https://certbot.eff.org" target="_blank" rel="noopener">Let’s Encrypt</a></li><li><a href="https://github.com/OOnnnOO/nginx-conf" target="_blank" rel="noopener">我的nginx配置信息</a></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;之前是使用 &lt;a href=&quot;https://github.com/diafygi/acme-tiny&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;acme-tiny&lt;/a&gt;获取 Let’s Encrypt 证书，但是这次弄死活就弄不上，就尝试一下用官方
-      
-    
-    </summary>
-    
-    
-      <category term="https" scheme="https://lidong.me/tags/https/"/>
-    
-      <category term="server" scheme="https://lidong.me/tags/server/"/>
-    
-      <category term="letsencrypt" scheme="https://lidong.me/tags/letsencrypt/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用docker部署</title>
-    <link href="https://lidong.me/deploy-by-docker/"/>
-    <id>https://lidong.me/deploy-by-docker/</id>
-    <published>2017-06-22T07:56:10.000Z</published>
-    <updated>2017-06-22T07:56:10.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="PHP-Container"><a href="#PHP-Container" class="headerlink" title="PHP Container"></a>PHP Container</h2><p>负责处理php程序</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker run -d -p 9000:9000 --name php \</span><br><span class="line">-v /var/www/file:/var/www/html \</span><br><span class="line">php:7.1-fpm</span><br></pre></td></tr></table></figure><blockquote><p>注意在这里有坑，因为映射的目录路径不一致导，致与Nginx搭配时，文件读取错误，出现F。目前的做法是在nginx配置文件中单独设置，后期想想有没有好的方法再调整</p></blockquote><h2 id="Nginx-Container"><a href="#Nginx-Container" class="headerlink" title="Nginx Container"></a>Nginx Container</h2><p>负责静态文件处理静态文件及对其他程序的转发</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --name site -p 80:80 -p 443:443 \</span><br><span class="line">-v /var/www:/var/www \</span><br><span class="line">-v /etc/nginx/conf.d:/usr/local/nginx/conf.d \</span><br><span class="line">-v /var/log/nginx:/usr/local/nginx/logs \</span><br><span class="line">-v /etc/letsencrypt:/etc/letsencrypt \</span><br><span class="line">onnno/nginx</span><br></pre></td></tr></table></figure><p>各 Volume 作用，请查看<a href="https://github.com/OOnnnOO/docker-nginx" target="_blank" rel="noopener">README.md</a>及<a href="https://github.com/OOnnnOO/docker-nginx/blob/master/Dockerfile" target="_blank" rel="noopener">dockerfile</a></p><p><a href="https://github.com/OOnnnOO/nginx-conf" target="_blank" rel="noopener">https://github.com/OOnnnOO/nginx-conf</a></p><h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><ol><li>2017-06-22 首次发布</li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;PHP-Container&quot;&gt;&lt;a href=&quot;#PHP-Container&quot; class=&quot;headerlink&quot; title=&quot;PHP Container&quot;&gt;&lt;/a&gt;PHP Container&lt;/h2&gt;&lt;p&gt;负责处理php程序&lt;/p&gt;
-&lt;figure clas
-      
-    
-    </summary>
-    
-    
-      <category term="nginx" scheme="https://lidong.me/tags/nginx/"/>
-    
-      <category term="php" scheme="https://lidong.me/tags/php/"/>
-    
-      <category term="docker" scheme="https://lidong.me/tags/docker/"/>
     
   </entry>
   

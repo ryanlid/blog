@@ -359,6 +359,29 @@ article .highlight td {
 article .post-info {
   padding: 20px 0;
 }
+article table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+}
+article table th {
+  font-weight: 600;
+}
+article table th,
+article table td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+article table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+article table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+article table img {
+  background-color: transparent;
+}
 .page-navigator {
   text-align: right;
 }

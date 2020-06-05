@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://lidong.me/"/>
-  <updated>2020-06-02T23:21:31.000Z</updated>
+  <updated>2020-06-04T20:27:37.000Z</updated>
   <id>https://lidong.me/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>stun/turn 服务器</title>
+    <link href="https://lidong.me/stun-turn-server/"/>
+    <id>https://lidong.me/stun-turn-server/</id>
+    <published>2020-06-04T20:27:37.000Z</published>
+    <updated>2020-06-04T20:27:37.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="选型"><a href="#选型" class="headerlink" title="选型"></a>选型</h2><ul><li>rfc5766-turn-server</li><li><a href="https://github.com/coturn/coturn/" target="_blank" rel="noopener">coTurn</a></li></ul><h2 id="源码安装"><a href="#源码安装" class="headerlink" title="源码安装"></a>源码安装</h2><ol><li><p>下载 <a href="https://github.com/coturn/coturn/releases" target="_blank" rel="noopener">https://github.com/coturn/coturn/releases</a></p></li><li><p>生成 makefile</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./configure -prefix=/usr/local/coturn</span><br></pre></td></tr></table></figure></li><li><p>编译安装</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make &amp;&amp; make install</span><br></pre></td></tr></table></figure></li></ol><h2 id="服务器配置"><a href="#服务器配置" class="headerlink" title="服务器配置"></a>服务器配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 指定监听端口</span><br><span class="line">listening-port=3478</span><br><span class="line"># 指定云主机的公网IP地址</span><br><span class="line">external-ip=12.34.56.78</span><br><span class="line"># 访问stun/turn服务器的用户名和密码</span><br><span class="line">user=aaa:bbb</span><br><span class="line"># 域名</span><br><span class="line">realm=stun.example.com</span><br></pre></td></tr></table></figure><h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/coturn/bin/turnserver -c /usr/local/coturn/etc/turnserver.conf</span><br></pre></td></tr></table></figure><h2 id="检测"><a href="#检测" class="headerlink" title="检测"></a>检测</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -ef | grep turn</span><br></pre></td></tr></table></figure><h2 id="测试-turn-服务"><a href="#测试-turn-服务" class="headerlink" title="测试 turn 服务"></a>测试 turn 服务</h2><p>通过 webrtc 示例测试 turn 服务</p><p><a href="https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/" target="_blank" rel="noopener">https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/</a></p><h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><ol><li>2020/6/4 20:27:37 首次发布</li></ol><h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;选型&quot;&gt;&lt;a href=&quot;#选型&quot; class=&quot;headerlink&quot; title=&quot;选型&quot;&gt;&lt;/a&gt;选型&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;rfc5766-turn-server&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/coturn/
+      
+    
+    </summary>
+    
+    
+      <category term="webrtc" scheme="https://lidong.me/tags/webrtc/"/>
+    
+      <category term="stun" scheme="https://lidong.me/tags/stun/"/>
+    
+      <category term="turn" scheme="https://lidong.me/tags/turn/"/>
+    
+  </entry>
   
   <entry>
     <title>WebRTC 媒体流 mediastream</title>
@@ -1254,33 +1283,6 @@
       <category term="raspberrypi" scheme="https://lidong.me/tags/raspberrypi/"/>
     
       <category term="vnc" scheme="https://lidong.me/tags/vnc/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>通过adb命令操作android设备</title>
-    <link href="https://lidong.me/use-adb-command/"/>
-    <id>https://lidong.me/use-adb-command/</id>
-    <published>2017-08-05T21:59:44.000Z</published>
-    <updated>2017-08-05T21:59:44.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>因为前些天，手机掉地上，摔碎了屏幕，现在手机是半身不遂(下半屏触摸失效)😢</p><p>搜索一下，发现可以通过android的调试工具来触发点击事件的，而且不仅仅是触发点击事件功能。</p><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><h3 id="下载-platform-tools"><a href="#下载-platform-tools" class="headerlink" title="下载 platform tools"></a>下载 platform tools</h3><p>要通过电脑来操作android终端，首先需要下载adb工具</p><p>下载页面：</p><p><a href="https://developer.android.com/studio/releases/platform-tools.html" target="_blank" rel="noopener">https://developer.android.com/studio/releases/platform-tools.html</a></p><p>下载链接：</p><p><a href="https://dl.google.com/android/repository/platform-tools-latest-windows.zip" target="_blank" rel="noopener">https://dl.google.com/android/repository/platform-tools-latest-windows.zip</a></p><p><a href="https://dl.google.com/android/repository/platform-tools-latest-darwin.zip" target="_blank" rel="noopener">https://dl.google.com/android/repository/platform-tools-latest-darwin.zip</a></p><p><a href="https://dl.google.com/android/repository/platform-tools-latest-linux.zip" target="_blank" rel="noopener">https://dl.google.com/android/repository/platform-tools-latest-linux.zip</a></p><p>MacOS可以通过brew来安装</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew cask install android-platform-tools</span><br></pre></td></tr></table></figure><h3 id="下载安装手机驱动"><a href="#下载安装手机驱动" class="headerlink" title="下载安装手机驱动"></a>下载安装手机驱动</h3><p>这个不同手机驱动不同，要到各自手机厂商去下载，或者要简单一些，各种手机助手随便下载一个，会自动帮你把需要安装的手机驱动安装完成。</p><h3 id="开启手机调试"><a href="#开启手机调试" class="headerlink" title="开启手机调试"></a>开启手机调试</h3><p>用过手机助手都懂，不解释</p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>查看设备连接情况</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb devices</span><br></pre></td></tr></table></figure><p>进入shell</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb shell</span><br></pre></td></tr></table></figure><p>点击坐标（500，1600）</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb shell tap 500，1600</span><br></pre></td></tr></table></figure><p>输入字符abc</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb shell input text &quot;abc&quot;</span><br></pre></td></tr></table></figure><p>屏幕截图</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb shell screencap /sdcard/screen.png</span><br></pre></td></tr></table></figure><p>录制视频</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb shell screenrecord /sdcard/demo.mp4</span><br></pre></td></tr></table></figure><p>安装软件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb install path_to_apk</span><br></pre></td></tr></table></figure><p>从设备复制文件或目录</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb pull remote local</span><br></pre></td></tr></table></figure><p>将文件目录复制到设备</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb push local remote  // 比如：adb push foo.txt /sdcard/foo.txt</span><br></pre></td></tr></table></figure><p>重启adb服务器</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb kill-server</span><br></pre></td></tr></table></figure><h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><ol><li>2017-08-05 首次发布</li></ol><h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ol><li>Android 调试桥：<a href="https://developer.android.com/studio/command-line/adb.html" target="_blank" rel="noopener">https://developer.android.com/studio/command-line/adb.html</a></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;因为前些天，手机掉地上，摔碎了屏幕，现在手机是半身不遂(下半屏触摸失效)😢&lt;/p&gt;
-&lt;p&gt;搜索一下，发现可以通过android的调试工具来触发点击事件的，而且不仅仅是触发点击事件功能。&lt;/p&gt;
-&lt;h2 id=&quot;准备&quot;&gt;&lt;a href=&quot;#准备&quot; class=&quot;header
-      
-    
-    </summary>
-    
-    
-      <category term="android" scheme="https://lidong.me/tags/android/"/>
-    
-      <category term="adb" scheme="https://lidong.me/tags/adb/"/>
     
   </entry>
   

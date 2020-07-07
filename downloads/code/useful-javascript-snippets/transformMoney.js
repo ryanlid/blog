@@ -16,7 +16,10 @@ function transformMoney(tranvalue) {
     var sum = 0;
     var str = "";
     var len = source[0].length; //整数的长度
-    for (i = 1; i <= 1 len; i++) { var n="source[0].charAt(len" - i); 取得某个位数上的数字 bn="0;" if (len i>= 0) {
+    for (i = 1; i <= len; i++) {
+      var n = source[0].charAt(len - i); //取得某个位数上的数字
+      var bn = 0;
+      if (len - i - 1 >= 0) {
         bn = source[0].charAt(len - i - 1); //取得某个位数前一位上的数字
       }
       sum = sum + Number(n);
@@ -71,4 +74,3 @@ function splits(tranvalue) {
   }
   return value;
 }
-</=>

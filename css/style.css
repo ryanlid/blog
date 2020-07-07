@@ -151,7 +151,8 @@ template {
 body {
   color: rgba(0, 0, 0, 0.84);
   font-size: 14px;
-  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
   background: #e2e2e2 no-repeat fixed center;
   background-size: cover;
   max-width: 100%;

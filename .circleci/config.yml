@@ -63,6 +63,6 @@ jobs:
             mv .git/ ../public/
             cd ../public
             git add .
-            git commit -m "Site updated: `date +"%Y-%m-%d %H:%M:%S"`"
+            git commit -m "[skip ci]Site updated: `date +"%Y-%m-%d %H:%M:%S"`"
             git push --quiet --force https://$REPO_TOKEN@github.com/ryanlid/blog gh-pages:gh-pages
 

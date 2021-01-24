@@ -11,6 +11,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/cors-settings>
+
 跨域资源共享(CORS) 是一种机制，它使用额外的 HTTP 头来告诉浏览器，让运行在一个 origin (domain) 上的 Web 应用被准许访问来自不同源服务器上的指定的资源。当一个资源从与该资源本身所在的服务器不同的域、协议或端口请求一个资源时，资源会发起一个跨域 HTTP 请求。具体参考 [MDN 文档](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS)
 
 <!-- more -->

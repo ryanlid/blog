@@ -2,10 +2,12 @@
 title: 用 CSS 将一个容器居中
 date: 2016-10-25 16:06:36
 updated: 2016-10-25 16:06:36
-tags: 
+tags:
 - css
 category:
 ---
+
+欢迎访问新站点: <https://www.yidiankuaile.com/post/css-center>
 
 1. position + margin
 2. display:table-cell
@@ -95,7 +97,7 @@ category:
     width: 200px;
     height: 200px;
 }
- 
+
 .center {
     position: absolute;
     background: green;
@@ -123,11 +125,11 @@ category:
     background: yellow;
     width: 200px;
     height: 200px;
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
- 
+
 .center {
     background: green;
     width: 100px;
@@ -150,9 +152,9 @@ category:
     background: yellow;
     width: 200px;
     height: 200px;
-    display: flex; 
+    display: flex;
 }
- 
+
 .center {
     background: green;
     width: 100px;
@@ -185,8 +187,8 @@ category:
     width: 100px;
     height: 100px;
     left: 50px;
-    top: 50px; 
-  
+    top: 50px;
+
 }
 /**方法二**/
 .center {
@@ -204,12 +206,12 @@ category:
 
 方法一计算公式如下：
 
-子元素（conter）的left值计算公式：left=(父元素的宽 - 子元素的宽 ) / 2=(200-100) / 2=50px; 
+子元素（conter）的left值计算公式：left=(父元素的宽 - 子元素的宽 ) / 2=(200-100) / 2=50px;
 子元素（conter）的top值计算公式：top=(父元素的高 - 子元素的高 ) / 2=(200-100) / 2=50px;
 
-方法二计算公式： 
-left值固定为50%; 
-子元素的margin-left= -（子元素的宽/2）=-100/2= -50px; 
+方法二计算公式：
+left值固定为50%;
+子元素的margin-left= -（子元素的宽/2）=-100/2= -50px;
 top值也一样，固定为50%
 
 子元素的margin-top= -（子元素的高/2）=-100/2= -50px;
@@ -233,12 +235,12 @@ top值也一样，固定为50%
     position: relative;
     float:left;
     background: yellow;
-}      
- 
+}
+
 .tableCell {
     display: table-cell;
     vertical-align: middle;
-    text-align: center;        
+    text-align: center;
     *position: absolute;
     padding: 10px;
     *top: 50%;

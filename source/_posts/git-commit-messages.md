@@ -6,6 +6,8 @@ tags:
 - git
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/git-commit-messages>
+
 1. 使用现在时
 Use the present tense ("Add feature" not "Added feature")
 <!-- more -->

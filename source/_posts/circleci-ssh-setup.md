@@ -10,6 +10,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/circleci-ssh-setup>
+
 <!-- more -->
 
 ## 添加 circleci 用户

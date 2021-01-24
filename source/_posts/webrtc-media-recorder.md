@@ -8,6 +8,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/webrtc-media-recorder>
+
 ## MediaRecorder
 
 媒体流录制

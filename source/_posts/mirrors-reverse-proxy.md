@@ -9,6 +9,10 @@ tags:
 category:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/>
+
+相关内容: <https://www.yidiankuaile.com/post/linux-mirrors-settings>
+
 通过apt镜像，可以快速的安装软件包，但由于部分镜像地址直接访问有困难，所以我对这些镜像地址使用nginx搭建了一个反向代理。如需使用，请修改 `/etc/apt/sources.list.d/` 中对应文件中URL。
 
 <!-- more -->

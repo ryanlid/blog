@@ -12,6 +12,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/cordova-setup>
+
 公司的一个项目是使用 cordova 框架做的，现在在自己电脑重新搭建一下开发环境，整理一下文档备忘。
 
 <!-- more -->

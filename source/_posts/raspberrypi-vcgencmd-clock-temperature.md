@@ -8,6 +8,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/raspberrypi-vcgencmd-clock-temperature>
+
 在 Raspberry Pi 中我们可以利用 vcgencmd 指令来查看各种硬件信息和状态，以下是常用的指令示例。
 
 <!-- more -->

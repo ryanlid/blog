@@ -11,6 +11,7 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/web-apis>
 ## 页面可见性 (page visibility)
 
 <a href="https://lidong.me/sandbox/web-api/networkstatus.html" target="_blank">网络状态检测</a>

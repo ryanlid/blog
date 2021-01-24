@@ -11,6 +11,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/es6-learning>
+
 又学习了一下 JavaScript 的 ES6 的语法，记录一下～
 
 <!-- more -->

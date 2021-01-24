@@ -9,6 +9,8 @@ tags:
 - windows
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/files-hash>
+
 ## Linux中
 md5计算
 
@@ -17,7 +19,7 @@ md5sum example.zip
 dc6db660b498fb39e5ef4718e6d28181  example.zip
 ```
  <!-- more -->
-sha1计算   
+sha1计算
 
 ```
 sha1sum example.zip

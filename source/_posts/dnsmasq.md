@@ -7,6 +7,8 @@ tags:
 - dns
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/dnsmasq-dns>
+
 这两天看YouTube比较多，但是代理网速不咋地，找了个可以访问IP，试试用hosts看，会不会好一点，但是YouTube的视频源地址是rx---sn-xxxxxxx.googlevideo.com,xxx部分不定，也就是说域名有很多，不过Google就是有那么点diao，把很多域名解析到同一个IP也是可以访问的。但是hosts文件本身不支持通配符，只好另辟蹊径：在本地搭建一个DNS。正好dnsmasq，使用简单，还支持通配符。
 <!-- more -->
 ### 1. 安装dnsmasq
@@ -19,11 +21,11 @@ tags:
 
     nameserver  119.29.29.29
     nameserver  8.8.8.8
-        
+
 拷贝一份模版配置文件，并对其修改：
-    
+
     cp /usr/local/opt/dnsmasq/dnsmasq.conf.example /usr/local/etc/dnsmasq.conf
-    
+
 修改配置文件
 
     # 引入刚刚的域名服务器文件
@@ -37,11 +39,11 @@ tags:
     # 域名解析设置
     address=/example.com/1.2.3.4
     # 上面示例表示 *.example.com域名都会解析道1.2.3.4 （包含exmple.com ）
-        
+
 ### 3. 启用 dnsmasq
 启动：`sudo dnsmasq`
 结束：`sudo kill 进程号`  (使用 `ps aux||grep dnsmasq` 第二列为进程号）
-    
+
 ### 4. 清除系统的DNS缓存
 
         sudo killall -HUP mDNSResponder

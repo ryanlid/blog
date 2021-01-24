@@ -9,6 +9,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/nginx-google-analytics>
+
 通常是通过引用 analytics.js 来使用 Google Analytics 。 但是这个方案缺点是：客户端安装 Adblock 等扩展，屏蔽了Google Analytics，导致统计信息偏差。
 
 通过将统计转移到后端发送，则可以避免统计被扩展拦截的可能，同时也提高浏览器访问页面的速度。

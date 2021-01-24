@@ -9,6 +9,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/second-set-wordpress>
+
 查看上一篇内容：[使用Docker安装WordPress](https://lidong.me/blog/install-wordpress-with-docker/)
 
 不到黄河不死心，早先就想把Wordpress部署在子目录，前几天把捣鼓了差不多一天都没弄好，今天有捣鼓了大约三四个小时，如您所见，终于弄成现在这个样子了。

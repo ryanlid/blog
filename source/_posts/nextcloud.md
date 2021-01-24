@@ -11,6 +11,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/docker-nextcloud-oss>
+
 嗯，阿里 OSS 最近出了个优惠，1T存储3年99元，看起来蛮便宜的，当然流量费另算，不过同区域的内网流量免费，入网流量免费，灰常适合作备份。哈哈 😄
 于是弄个nextcloud，倒腾一下~~，顺道记录一下倒腾过程。
 

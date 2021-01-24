@@ -9,6 +9,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/raspberrypi-plex>
+
 Plex是一款功能强大的流媒体播放器
 
 <!-- more -->

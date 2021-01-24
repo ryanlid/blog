@@ -9,6 +9,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/vscode-shortcut-to-right-key>
+
 在安装 VSCode 的时候勾选添加到PATH，是可以在右键自动添加快捷方式的，不过某些请情况，可能没有快捷方式，需要手动添加。当然以下方式可以适用于把其他软件添加到右键快捷方式的。
 
 <!-- more -->

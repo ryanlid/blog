@@ -9,6 +9,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/shell-monitor-web-restart-docker>
+
 最近，不知道是 MySQL Container 的问题，还是迁移到阿里云，阿里主机的问题，抑或网络爬虫，抓取频繁，挂掉了？反正隔个两天，CPU占用100%，MySQL Container运行出错，导致我的 Wordpress 无法访问。我了个擦。
 
 <!-- more -->

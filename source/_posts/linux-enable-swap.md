@@ -7,6 +7,8 @@ tags:
 - swap
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/linux-enable-swap>
+
 1. 检查分区情况
 
     free -m

@@ -10,6 +10,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/hexo-travis-ci>
+
 以前有使用 hexo 记录 blog ，但不能在线修改，每次写完都要本地构建、提交、上传，操作繁琐， 遂弃之，今天重新尝试使用 hexo ，不过这次配置好了 CI，简化日常操作，现在记录一下操作步骤。
 
 <!-- more -->

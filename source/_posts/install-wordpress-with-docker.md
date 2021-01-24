@@ -9,6 +9,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/install-wordpress-with-docker>
+
 ![docker-wordpress.png](https://static.lidong.me/upload/images/zgVFGyB2j.png)
 
 今天是元旦，首先要祝自己、祝大家元旦快乐?。

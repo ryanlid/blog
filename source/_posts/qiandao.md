@@ -9,6 +9,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/qiandao>
+
 为了方便记录每天签到领取积分的小事，避免遗漏，或者重复操作，做了一个小工具
 
 <!-- more -->

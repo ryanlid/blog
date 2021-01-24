@@ -6,6 +6,8 @@ tags:
 - macos
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/macos-files-show-hide>
+
 苹果Mac OS X操作系统下，设置隐藏文件是否显示有很多种方法
 <!-- more -->
 ## 方法一
@@ -23,7 +25,7 @@ tags:
 输完单击Enter键，退出终端，重新启动Finder就可以了
 
 重启Finder：鼠标单击窗口左上角的苹果标志-->强制退出-->Finder-->重新启动
- 
+
 ## 方法三
 <b> UPDATE 2016.12.23 : </b>
 

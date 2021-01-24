@@ -9,6 +9,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/webrtc-video-filter>
+
 视频特效实现
 
 1. CSS filter, filter

@@ -8,6 +8,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/webrtc-mediastream>
+
 添加轨
 
 ```js

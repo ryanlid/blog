@@ -9,6 +9,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/windows10-wsl-ubuntu>
+
 [![store](https://static.lidong.me/upload/images/keqvjWA_P.png)](https://static.lidong.me/upload/images/keqvjWA_P.png)
 
 wsl开启相关内容参考 [巨硬的文档](https://docs.microsoft.com/zh-cn/windows/wsl/install-win10)

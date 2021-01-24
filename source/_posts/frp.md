@@ -9,6 +9,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/frp>
+
 因为光纤改造，安装上了光纤，没了公网IP，嗯，也没有去找客服要，想着试一下内网穿透。frp这个内网穿透的工具，使用配置起来，还是挺简单的
 
 <!-- more -->

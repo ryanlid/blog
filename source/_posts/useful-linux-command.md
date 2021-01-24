@@ -7,18 +7,20 @@ tags:
 category:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/useful-linux-command>
+
 查看端口占用情况
 
     lsof -i:端口号
 
-    netstat -apn | grep 端口号 
+    netstat -apn | grep 端口号
 
 查看进程
-    
+
     ps -aux | grep 进程号
-       
+
     ps -aux | grep 进程名
-   
+
 时间同步
 
     ntpdate time.windows.com

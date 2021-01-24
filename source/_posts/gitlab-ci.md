@@ -7,6 +7,9 @@ tags:
 - gitlab-ci
 category:
 ---
+
+欢迎访问新站点: <https://www.yidiankuaile.com/post/gitlab-ci>
+
 持续集成，听起来很棒的样子，我就小做尝试一把
 <!-- more -->
 ## 1.GitLab-Runner下载

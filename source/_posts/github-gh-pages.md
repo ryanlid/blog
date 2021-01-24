@@ -7,6 +7,9 @@ tags:
 - github
 category:
 ---
+
+欢迎访问新站点: <https://www.yidiankuaile.com/post/github-gh-pages>
+
 有时项目只需要使用gh-pages分支，并不要master分支
 <!-- more -->
 ## 创建 只有gh-pages分支

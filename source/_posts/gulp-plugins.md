@@ -5,11 +5,14 @@ updated: 2016-09-20 17:09:01
 tags:
 - gulp
 ---
+
+欢迎访问新站点: <https://www.yidiankuaile.com/post/gulp-plugins>
+
 一些在gulp中常用的插件
 <!-- more -->
 
-```    
-gulp = require('gulp'),  
+```
+gulp = require('gulp'),
 sass = require('gulp-ruby-sass'),
 autoprefixer = require('gulp-autoprefixer'),
 minifycss = require('gulp-minify-css'),

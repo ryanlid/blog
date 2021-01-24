@@ -9,6 +9,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/raspberry-pi-install-ffmpeg>
+
 ## 安装编译x264
 
 ``` sh

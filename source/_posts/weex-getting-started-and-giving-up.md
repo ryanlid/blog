@@ -9,6 +9,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/weex>
+
 在项目中尝试使用，研究了好几天，感觉框架不成熟，很多功能需要原生支撑，最终决定弃坑，不过还是记录一下。
 
 <!-- more -->

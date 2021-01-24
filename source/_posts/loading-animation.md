@@ -10,6 +10,8 @@ tags:
 - codepen
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/loading-animation>
+
 使用css3技术制作一个简单的loading动画
 
 <p data-height="265" data-theme-id="0" data-slug-hash="vXEWGd" data-default-tab="css,result" data-user="oonnnoo" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/oonnnoo/pen/vXEWGd/">loading animation 等待加载时的动画</a> by oonnnoo (<a href="http://codepen.io/oonnnoo">@oonnnoo</a>) on <a href="http://codepen.io">CodePen</a>.</p>

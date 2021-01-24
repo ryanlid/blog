@@ -2,12 +2,14 @@
 title: 使用docker部署
 date: 2017-06-22 07:56:10
 updated: 2017-06-22 07:56:10
-tags: 
+tags:
 - docker
 - php
 - nginx
 category:
 ---
+
+欢迎访问新站点: <https://www.yidiankuaile.com/post/deploy-by-docker>
 
 ## PHP Container
 

@@ -9,6 +9,8 @@ tags:
 category:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/raspberrypi-vnc>
+
 ## 安装 VNC 服务端
 
 ```

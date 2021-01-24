@@ -8,6 +8,7 @@ tags:
 category:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/curl>
 ## 命令参数
 
 显示输出内容

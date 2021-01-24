@@ -9,6 +9,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/l2tp-vpn>
+
 因为在路由器上需要用到，这里记录一下VPN安装方式。
 
 <!-- more -->

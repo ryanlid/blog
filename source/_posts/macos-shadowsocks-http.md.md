@@ -10,6 +10,8 @@ tags:
 category:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/macos-shadowsocks-http>
+
 ### 安装privoxy
 这里我是通过brew来进行的安装
 

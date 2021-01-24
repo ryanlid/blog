@@ -9,6 +9,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/bitcoin>
+
 感觉比特币现在很火（嗯，好像已经火过了～），作为一个自认为有点极客的人，却一直没有参与到这项极客活动中来，现在上车了。
 
 <!-- more -->

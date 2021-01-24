@@ -10,6 +10,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/upload-host>
+
 之前在需要贴图的时，上传图片都是用ftp上传，或者通过 Dropshare 这个好用的工具，但是局限性比较大。一直想搭建一个图片上传的工具，无奈拖延症晚期，一直没有弄，不过现在，终于弄了一个，现在功能超级简单，就是上传图片。
 
 <!-- more -->

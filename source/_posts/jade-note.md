@@ -10,6 +10,8 @@ tags:
 category:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/pug-note>
+
 Jade模版引擎
 <mark>
 好吧，它的新版本已经改名叫 `pug` 了，但我看的书中讲的是 `Jade`， 而且感觉使用上几乎木有问题，所以就先记 `Jade`，之后再去看看 `pug` 的文档。语法应该差不多的。😝

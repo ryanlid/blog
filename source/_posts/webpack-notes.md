@@ -2,10 +2,12 @@
 title: webpack 笔记
 date: 2017-03-14 23:56:09
 updated: 2017-03-14 23:56:09
-tags: 
+tags:
 - webpack
 category:
 ---
+
+欢迎访问新站点: <https://www.yidiankuaile.com/post/webpack-notes>
 
 特点：
 静态资源
@@ -52,7 +54,7 @@ function(){
 ```
 
 
-### 使用webpack命令 
+### 使用webpack命令
 Webpack命令的常用参数：
 在命令行中绑定loader，
 自动更新，打包，
@@ -88,12 +90,12 @@ outfile:{
   path:'./dist/js',
   //占位符： name 表示原文件名，hash当前打包的hash,chunkhash表示每个打包文件的hash，
   filename:'[name]-[hash]-bundle.js'
-  //filename:'[name]-[chunkhash]-bundle.js'  
+  //filename:'[name]-[chunkhash]-bundle.js'
   }
 }
 ```
 
-## 插件使用 
+## 插件使用
 安装使用插件 [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin)，让js自动引入到html中
 
 ```
@@ -111,7 +113,7 @@ module.exports={
   output:{
     path:'./dist/',
     filename:'js/[name]-[hash]-bundle.js',
-    publicPath:'http://cdn.com/' 
+    publicPath:'http://cdn.com/'
 
   },
   plugins:[

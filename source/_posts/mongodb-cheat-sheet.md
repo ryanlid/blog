@@ -9,6 +9,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/mongodb-cheat-sheet>
+
 ## 查询
 
 > `db.getCollection("users").find(用于过滤记录的字典，用于限定字段的字典)`

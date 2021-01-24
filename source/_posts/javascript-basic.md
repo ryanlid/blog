@@ -6,6 +6,8 @@ tags:
 - javascript
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/javascript-basic-algorithm>
+
 String.split() 将字符串对象分割成字符串数组
 
     str.split([separator][, limit])
@@ -57,7 +59,7 @@ Array.prototype.filter() 使用指定的函数测试所有元素，并创建一�
 String.prototype.substr() 返回字符串中从指定位置开始到指定长度的子字符串。
 
     str.substr(start[, length])
-    
+
 String.prototype.substring() 返回字符串两个索引之间（或到字符串末尾）的子串
 
     str.substring(indexStart[, indexEnd])
@@ -75,5 +77,5 @@ String.prototype.charCodeAt() 返回0到65535之间的整数，代表索引处�
 
 String.fromCharCode() 根据指定的 Unicode 编码中的序号值来返回一个字符串
 
-    String.fromCharCode(num1, ..., numN) 
+    String.fromCharCode(num1, ..., numN)
 

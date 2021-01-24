@@ -8,6 +8,8 @@ tags:
 category:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/hexo-theme-simple>
+
 自己做了一个主题,算是用来练手。
 <!-- more -->
 简单记录一下

@@ -9,6 +9,8 @@ tags:
 - 浏览器
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/browser>
+
 整理一下各大浏览器下载地址，需要的时候可以直接下载
 
 <!-- more -->

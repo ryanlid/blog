@@ -8,6 +8,8 @@ tags:
   - ubuntu
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/docker-ce-install>
+
 因为更换主机，重新部署环境，顺便整理一下文档。
 <!--more-->
 

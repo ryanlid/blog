@@ -10,6 +10,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/stun-server-turn-server>
+
 ## 选型
 
 - rfc5766-turn-server

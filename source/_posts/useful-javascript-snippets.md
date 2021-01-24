@@ -7,6 +7,8 @@ tags:
 category:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/>
+
 1. 实现字符串长度截取
 
 2. 获取域名主机

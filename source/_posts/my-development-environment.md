@@ -17,6 +17,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/my-development-environment>
+
 我的开发环境
 
 <!-- more -->

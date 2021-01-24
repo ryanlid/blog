@@ -7,6 +7,8 @@ tags:
 - gulp
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/gulp-auto-css-prefix>
+
 先安装npm包 [gulp-postcss](https://github.com/postcss/postcss-loader) ,[autoprefixer]()，在gulp中添加下面的task：
 
     var gulp = require('gulp');
@@ -17,7 +19,7 @@ tags:
         .pipe(postcss([ autoprefixer({ browsers: ['last 2 versions'] }) ]))
         .pipe(gulp.dest('./dist/postcss'));
     });
-    
+
 我现在常用gulp，就只记录gulp方法了。
 
 更多方法请参考:

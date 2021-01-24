@@ -13,6 +13,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/web-file-api>
+
 ## 文件 API
 
 HTML5 提供了关于文件操作的文件 API。

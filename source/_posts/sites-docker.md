@@ -8,6 +8,8 @@ tags:
 category:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/sites-docker>
+
 使用docker部署主要是为了方便迁移
 <!-- more -->
 ## 缘由

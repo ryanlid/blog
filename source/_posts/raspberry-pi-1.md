@@ -6,6 +6,8 @@ tags:
 - raspberrypi
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/raspberry-pi-basic-settings>
+
 前两天一时冲动，🙃买了个树莓派，于是边查资料边捣腾，系统都重装了三遍，终于搞定了。😂
 现在记录下来，以免哪天要从头开始，可以快速找到。如果能帮助到后来的人，那也是极好滴～
 <!--more-->

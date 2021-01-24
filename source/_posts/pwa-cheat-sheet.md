@@ -10,6 +10,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/pwa-cheat-sheet>
+
 <!-- more -->
 
 ### 什么是 PWA

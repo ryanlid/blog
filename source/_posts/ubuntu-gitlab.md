@@ -7,6 +7,8 @@ tags:
 - gitlab
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/ubuntu-install-gitlab>
+
 Gitlab 可以用来搭建自己的git仓库
 <!--more-->
 <div class="alert">
@@ -28,47 +30,47 @@ Gitlab 可以用来搭建自己的git仓库
         sudo apt-get install ca-certificates curl openssh-server postfix
 
 2. 安装 Gitlab
-   
+
         cd /tmp
         curl -LO https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh
 
         sudo bash /tmp/script.deb.sh
-    
+
         sudo apt-get install gitlab-ce
 3. 编辑 `/etc/gitlab/gitlab.rb` 配置文件
 
         sudo vim /etc/gitlab/gitlab.rb
-    
+
     修改
-    
-        external_url 'http://g.lidong.me' 
-    
+
+        external_url 'http://g.lidong.me'
+
     使配置文件生效
-    
+
         sudo gitlab-ctl reconfigure
-4. 安装完成  
-http://g.lidong.me 
-    
+4. 安装完成
+http://g.lidong.me
+
 ## 配置Let's Encrypt
 
 安装 Let's Encrypt 客户端
-    
+
     sudo apt-get update
     sudo apt-get install letsencrypt
-    
+
 准备 Let's Encrypt 验证 WEB 目录
 
     sudo mkdir -p /var/www/letsencrypt
-   
+
 编辑gitlab.rb配置文件
 
     sudo vi /etc/gitlab/gitlab.rb
-   
+
 将下面配置文件加入到添加 `gitlab.rb` 中
 
     ['custom_gitlab_server_config'] = "location ^~ /.well-known { root /var/www/letsencrypt; }"
 
-            
+
 是配置文件生效
 
     sudo gitlab-ctl reconfigure
@@ -77,12 +79,12 @@ http://g.lidong.me
 (将g.lidong.me替换成你的域名)
 
     sudo letsencrypt certonly -a webroot -w /var/www/letsencrypt -d g.lidong.me
-    
+
 编辑`gitlab.rb`配置文件
 
     sudo vi /etc/gitlab/gitlab.rb
 将URL修改为以https开头
-    
+
     external_url 'https://g.lidong.me'
 
 配置nginx部分，添加你的证书路径
@@ -94,11 +96,11 @@ http://g.lidong.me
 使配置文件生效
 
     sudo gitlab-ctl reconfigure
-    
+
 这时你访问你的网站时候，将自动重http跳转到https。
 
     http://g.lidong.me
-    
+
 ## 配置Let's Encrypt自动更新
 
 在 `sudo crontab -e` 加入以下内容
@@ -115,11 +117,11 @@ http://g.lidong.me
 - 2017年3月06日 关闭自建Gitlab服务。
 
 参考链接：
-  
-1. [GitLab 下载](https://about.gitlab.com/downloads/)  
+
+1. [GitLab 下载](https://about.gitlab.com/downloads/)
 
 2. [How To Install and Configure GitLab on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-gitlab-on-ubuntu-16-04)
-    
+
 3. [How To Secure GitLab with Let's Encrypt on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-secure-gitlab-with-let-s-encrypt-on-ubuntu-16-04)
 
 

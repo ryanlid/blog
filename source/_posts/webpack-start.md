@@ -10,6 +10,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/webpack-start>
+
 ## 初始化项目
 
 ```

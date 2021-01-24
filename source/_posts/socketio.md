@@ -7,6 +7,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/socketio-notes>
+
 ## 服务端发送消息
 
 给本次连接发消息

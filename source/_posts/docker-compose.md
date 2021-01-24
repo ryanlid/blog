@@ -9,6 +9,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/docker-compose>
+
 ## docker-compose安装
 参看[官方文档](https://docs.docker.com/compose/install/#install-compose)
 

@@ -9,6 +9,8 @@ tags:
 category:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/initial-server-setup>
+
 ## 添加用户
 
 > 请将下面提到 ryan 替换成你自己的用户名

@@ -6,6 +6,7 @@ tags:
 - git
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/git>
 ### 设置
 
 ```shell

@@ -9,6 +9,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/install-mongodb>
+
 ## MacOS
 
 ### 使用 brew 安装

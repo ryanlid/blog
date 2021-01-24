@@ -6,5 +6,7 @@ tags:
 - html5
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/>
+
 
 

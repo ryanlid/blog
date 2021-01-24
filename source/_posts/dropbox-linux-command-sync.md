@@ -10,6 +10,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/linux-command-dropbox-backup>
+
 之前就是用dropbox同步备份了，没有记录。现在迁移主机，都不知道怎么操作了，重新整理记录一下。😓
 
 <!-- more -->

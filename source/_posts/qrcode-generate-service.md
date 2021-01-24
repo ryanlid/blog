@@ -10,6 +10,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/qrcode-generate-service>
+
 现成二维码生成器有很多，但是我还是自己弄了一个哈～
 
 <!-- more -->

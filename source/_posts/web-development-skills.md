@@ -7,6 +7,8 @@ tags:
 category:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/web-development-skills>
+
 ## Basic Front End
 <!-- more -->
 - 编辑器

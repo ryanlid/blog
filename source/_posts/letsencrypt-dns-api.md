@@ -11,6 +11,9 @@ tags:
 category:
 description:
 ---
+
+欢迎访问新站点: <https://www.yidiankuaile.com/post/letsencrypt-dns-api>
+
 <!-- more -->
 我域名的DNS托管在 Cloudflare，所以这里只记录 Cloudflare DNS 的操作。
 

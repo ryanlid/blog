@@ -7,6 +7,8 @@ tags:
 - atom
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/atom-plugin>
+
 使用一段时间 [Atom](https://atom.io) ，还是挺好用的，而且开源免费使用。现在整理一下使用到的插件，万一那天要换台电脑，也可以快速恢复继续使用。
 <!-- more -->
 

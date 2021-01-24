@@ -8,6 +8,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/flutter-setup>
+
 ## Windows 上的开发环境搭建
 
 ### 下载安装 Flutter 安装包

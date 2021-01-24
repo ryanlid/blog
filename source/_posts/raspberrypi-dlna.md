@@ -9,6 +9,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/raspberrypi-dlna>
+
 DLNA并不是创造技术，而是形成一种解决的方案，一种大家可以遵守的规范。嗯，通过它可以实现流媒体服务器～
 
 <!-- more -->

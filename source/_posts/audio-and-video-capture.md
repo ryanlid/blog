@@ -8,6 +8,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/webrtc-audio-and-video-capture>
+
 通过 `getUserMedia` 获取音视频
 
 ```js

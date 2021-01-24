@@ -10,6 +10,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/nvm-windows>
+
 为了方便的安装不同版本的 Nodejs，在 Linux或macOS上可以使用 [nvm](https://github.com/creationix/nvm) ，在 Windows 上则可以使用 [nvm-windows](https://github.com/coreybutler/nvm-windows)
 
 <!-- more -->

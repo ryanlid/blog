@@ -9,6 +9,8 @@ tags:
 category:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/certbot-letsencrypt>
+
 之前是使用 [acme-tiny](https://github.com/diafygi/acme-tiny)获取 Let's Encrypt 证书，但是这次弄死活就弄不上，就尝试一下用官方的工具了，用起来也很方便。[官方文档](https://certbot.eff.org/)写的已经很详细了。
 
 我记录一下方便下次～🤗

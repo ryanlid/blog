@@ -7,6 +7,9 @@ tags:
 - linux
 category:
 ---
+
+欢迎访问新站点: <https://www.yidiankuaile.com/post/nginx>
+
 ## 依赖安装
 
 ```

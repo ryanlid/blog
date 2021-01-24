@@ -8,6 +8,8 @@ tags:
 category:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/use-of-ssh-key>
+
 常见SSH密钥对使用场景：
 
 1. Git SSH拉取和提交时认证

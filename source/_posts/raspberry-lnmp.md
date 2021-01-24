@@ -11,6 +11,8 @@ tags:
 - mysql
 category:
 ---
+
+欢迎访问新站点: <https://www.yidiankuaile.com/post/raspberry-lnmp>
 ## 准备
 1.更新
 

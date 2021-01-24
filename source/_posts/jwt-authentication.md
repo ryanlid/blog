@@ -10,6 +10,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/nodejs-jwt-authentication>
+
 ## 初始化
 
 ```sh

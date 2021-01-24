@@ -7,6 +7,8 @@ tags:
 - macos
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/homebrew>
+
 ### 更新homebrew
 获取最新包列表
 

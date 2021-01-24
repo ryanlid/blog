@@ -9,6 +9,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/docker-mysql-export-import>
+
 因为做 wordpress 的数据库备份，通过 docker 使用了 mysql 导入导出，记录一下与 mysql 导入导出的操作。
 
 <!--more-->

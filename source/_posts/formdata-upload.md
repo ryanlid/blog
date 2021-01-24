@@ -10,6 +10,9 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/formdata-upload>
+
+
 通常表单上传是通过form提交上传的文件的话，对form设置 `enctype:'multipart/form-data'` ，将文件和其他字段一起提交就好了，但是这只能导致页面刷新，嗯，这是老的做法。
 
 <!--more-->

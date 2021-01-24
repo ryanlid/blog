@@ -12,6 +12,8 @@ category:
 description:
 ---
 
+欢迎访问新站点: <https://www.yidiankuaile.com/post/android-share-http-proxy>
+
 之前都是自己搭建shadowsocks，访问外网，前不久都被block了，在手机上有很多免费的软件可用，于是想着通过手机共享上网。
 
 <!-- more -->

@@ -8,6 +8,9 @@ category:
 description:
 ---
 
+
+欢迎访问新站点: <https://www.yidiankuaile.com/post/flutter-example>
+
 ## MaterialDesign 风格组件
 
 ### 主页
